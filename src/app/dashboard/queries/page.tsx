@@ -86,7 +86,7 @@ export default function QueriesPage() {
                 </ul>
             </div>
         </aside>
-        <main className="hidden md:flex flex-1 flex-col min-w-0">
+        <main className="hidden md:flex flex-col w-2/3">
             {selectedQuery ? (
                 <>
                 <div className="p-4 border-b flex items-center justify-between gap-4">
