@@ -8,32 +8,32 @@ import ScrollAnimationWrapper from '@/components/shared/ScrollAnimationWrapper';
 
 const services = [
   {
-    icon: <Landmark className="w-8 h-8 text-accent-foreground" />,
+    icon: <Landmark className="w-8 h-8 text-accent" />,
     title: 'EPFO Queries',
     description: 'Expert guidance on employee provident fund matters.',
   },
   {
-    icon: <Landmark className="w-8 h-8 text-accent-foreground" />,
+    icon: <Landmark className="w-8 h-8 text-accent" />,
     title: 'ESIC Queries',
     description: 'Resolving all your ESIC-related questions and concerns.',
   },
   {
-    icon: <FileText className="w-8 h-8 text-accent-foreground" />,
+    icon: <FileText className="w-8 h-8 text-accent" />,
     title: 'Issuance of eStamps',
     description: 'Quick and easy processing of digital stamp papers.',
   },
   {
-    icon: <FileText className="w-8 h-8 text-accent-foreground" />,
+    icon: <FileText className="w-8 h-8 text-accent" />,
     title: 'Notarisation of documents',
     description: 'Reliable and official notarisation for all your important documents.',
   },
   {
-    icon: <MessageSquareQuote className="w-8 h-8 text-accent-foreground" />,
+    icon: <MessageSquareQuote className="w-8 h-8 text-accent" />,
     title: 'Income Tax Queries',
     description: 'Professional advice for your income tax filings and issues.',
   },
   {
-    icon: <MessageSquareQuote className="w-8 h-8 text-accent-foreground" />,
+    icon: <MessageSquareQuote className="w-8 h-8 text-accent" />,
     title: 'GST Queries',
     description: 'Comprehensive support for all your GST needs.',
   },
@@ -98,13 +98,13 @@ export default function Home() {
                   scale: 0.95 
                 }}
               >
-                <Card className="h-full bg-accent/80 border-accent-foreground/20 hover:bg-accent/90 transition-colors duration-300 text-accent-foreground">
+                <Card className="h-full bg-black border-border/20 hover:bg-gray-800 transition-colors duration-300 text-white">
                   <CardHeader className="flex flex-row items-center gap-4">
                     {service.icon}
-                    <CardTitle className="font-headline text-xl">{service.title}</CardTitle>
+                    <CardTitle className="font-headline text-xl text-white">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-accent-foreground/80">{service.description}</p>
+                    <p className="text-white/80">{service.description}</p>
                   </CardContent>
                 </Card>
               </ScrollAnimationWrapper>
