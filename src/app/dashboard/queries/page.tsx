@@ -47,8 +47,8 @@ export default function QueriesPage() {
 
 
   return (
-    <div className="h-[calc(100vh-10rem)] bg-card border rounded-lg flex overflow-hidden">
-        <aside className="w-full md:w-1/3 border-r flex flex-col">
+    <div className="h-[calc(100vh-10rem)] bg-card border rounded-lg grid grid-cols-[384px,1fr] overflow-hidden">
+        <aside className="border-r flex flex-col">
             <div className="p-4 border-b">
                 <h1 className="text-2xl font-bold font-headline">Inbox</h1>
                 <div className="relative mt-4">
@@ -86,7 +86,7 @@ export default function QueriesPage() {
                 </ul>
             </div>
         </aside>
-        <main className="hidden md:flex flex-col w-2/3">
+        <main className="flex flex-col">
             {selectedQuery ? (
                 <>
                 <div className="p-4 border-b flex items-center justify-between gap-4">
