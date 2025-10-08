@@ -160,16 +160,16 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full py-20 md:py-32 bg-card/50">
+      <section className="w-full py-20 md:py-32 bg-accent">
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4 text-accent-foreground">
               Ready to Solve Your Queries?
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-lg md:text-xl text-accent-foreground/80 max-w-3xl mx-auto mb-8">
               Don't let questions linger. Get expert advice tailored to your needs.
             </p>
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button asChild size="lg" variant="secondary" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
               <Link href="/contact">Get in Touch</Link>
             </Button>
           </ScrollAnimationWrapper>
