@@ -177,7 +177,7 @@ const Sidebar = React.forwardRef<
   ) => {
     const { isMobile, state, openMobile, setOpenMobile } = useSidebar()
 
-    if (collapsible === "none") {
+    if (collapsible === "none" && variant !== 'floating') {
       return (
         <div
           className={cn(
@@ -245,7 +245,7 @@ const Sidebar = React.forwardRef<
               ? "p-2 group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4)_+2px)]"
               : "group-data-[collapsible=icon]:w-[var(--sidebar-width-icon)] group-data-[side=left]:border-r group-data-[side=right]:border-l",
             variant === "floating" &&
-              "h-fit top-1/2 -translate-y-1/2 ml-2",
+              "h-fit top-1/2 -translate-y-1/2 left-2",
             className
           )}
           {...props}
