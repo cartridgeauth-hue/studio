@@ -36,7 +36,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                     </div>
                 </SidebarHeader>
                 <SidebarContent>
-                    <SidebarMenu>
+                    <SidebarMenu className='gap-2'>
                         {navItems.map((item) => (
                             <SidebarMenuItem key={item.href}>
                                 <Link href={item.href}>
