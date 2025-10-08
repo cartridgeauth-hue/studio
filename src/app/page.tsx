@@ -93,7 +93,7 @@ export default function Home() {
               <ScrollAnimationWrapper 
                 key={index}
                 animation={{ 
-                  x: (index % 3 === 0) ? -100 : (index % 3 === 1) ? 0 : 100, 
+                  x: (index % 3 === 0) ? -100 : (index % 3 === 2) ? 100 : 0, 
                   opacity: 0, 
                   scale: 0.95 
                 }}
