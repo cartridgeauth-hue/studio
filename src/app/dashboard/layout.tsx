@@ -30,7 +30,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
     return (
         <SidebarProvider>
-            <Sidebar collapsible="icon">
+            <Sidebar collapsible="icon" variant="floating">
                 <SidebarHeader>
                     <div className="flex items-center justify-between p-2">
                          <Logo />
