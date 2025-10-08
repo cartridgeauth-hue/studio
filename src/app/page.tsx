@@ -8,32 +8,32 @@ import ScrollAnimationWrapper from '@/components/shared/ScrollAnimationWrapper';
 
 const services = [
   {
-    icon: <Landmark className="w-8 h-8 text-accent" />,
+    icon: <Landmark className="w-8 h-8 text-white" />,
     title: 'EPFO Queries',
     description: 'Expert guidance on employee provident fund matters.',
   },
   {
-    icon: <Landmark className="w-8 h-8 text-accent" />,
+    icon: <Landmark className="w-8 h-8 text-white" />,
     title: 'ESIC Queries',
     description: 'Resolving all your ESIC-related questions and concerns.',
   },
   {
-    icon: <FileText className="w-8 h-8 text-accent" />,
+    icon: <FileText className="w-8 h-8 text-white" />,
     title: 'Issuance of eStamps',
     description: 'Quick and easy processing of digital stamp papers.',
   },
   {
-    icon: <FileText className="w-8 h-8 text-accent" />,
+    icon: <FileText className="w-8 h-8 text-white" />,
     title: 'Notarisation of documents',
     description: 'Reliable and official notarisation for all your important documents.',
   },
   {
-    icon: <MessageSquareQuote className="w-8 h-8 text-accent" />,
+    icon: <MessageSquareQuote className="w-8 h-8 text-white" />,
     title: 'Income Tax Queries',
     description: 'Professional advice for your income tax filings and issues.',
   },
   {
-    icon: <MessageSquareQuote className="w-8 h-8 text-accent" />,
+    icon: <MessageSquareQuote className="w-8 h-8 text-white" />,
     title: 'GST Queries',
     description: 'Comprehensive support for all your GST needs.',
   },
@@ -65,7 +65,7 @@ export default function Home() {
     <div className="flex flex-col items-center">
       {/* Hero Section */}
       <section className="w-full text-center bg-background flex items-center justify-center min-h-screen">
-        <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="container mx-auto px-4">
           <ScrollAnimationWrapper>
             <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-4">
               Expert Guidance, Simplified.
