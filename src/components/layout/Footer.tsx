@@ -5,7 +5,7 @@ import { Facebook, Twitter, Linkedin } from 'lucide-react';
 export default function Footer() {
   return (
     <footer className="bg-card border-t border-border/40">
-      <div className="container mx-auto px-12 py-16 md:py-24">
+      <div className="container mx-auto px-12 lg:px-40 py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Logo />

@@ -65,7 +65,7 @@ export default function Home() {
     <div className="flex flex-col items-center">
       {/* Hero Section */}
       <section className="w-full text-center bg-background flex items-center justify-center min-h-[100vh]">
-        <div className="container mx-auto px-12">
+        <div className="container mx-auto px-12 lg:px-40">
           <ScrollAnimationWrapper>
             <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-4">
               Expert Guidance, Simplified.
@@ -82,7 +82,7 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="services" className="w-full py-16 md:py-24 bg-accent text-accent-foreground overflow-x-hidden">
-        <div className="container mx-auto px-12">
+        <div className="container mx-auto px-12 lg:px-40">
           <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
               Our Services
@@ -173,7 +173,7 @@ export default function Home() {
 
       {/* Featured Blog Posts */}
       <section className="w-full py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-12">
+        <div className="container mx-auto px-12 lg:px-40">
             <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
                 <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
                     From Our Blog
@@ -219,7 +219,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="w-full py-16 md:py-24 bg-accent">
-        <div className="container mx-auto px-12 text-center">
+        <div className="container mx-auto px-12 lg:px-40 text-center">
           <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
             <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4 text-accent-foreground">
               Ready to Solve Your Queries?
