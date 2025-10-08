@@ -1,6 +1,10 @@
 'use client';
-import { useRef, useEffect, useState, type ReactNode } from 'react';
+import { useRef, useEffect, type ReactNode } from 'react';
 import { cn } from '@/lib/utils';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface ScrollAnimationWrapperProps {
     children: ReactNode;
@@ -8,40 +12,33 @@ interface ScrollAnimationWrapperProps {
 }
 
 export default function ScrollAnimationWrapper({ children, className }: ScrollAnimationWrapperProps) {
-    const [isVisible, setIsVisible] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setIsVisible(true);
-                    } else {
-                        // Optional: remove this else block if you don't want the animation to repeat on scroll out and back in
-                        setIsVisible(false);
-                    }
-                });
-            },
-            {
-                threshold: 0.1, // Trigger when 10% of the element is visible
-            }
-        );
-
-        const currentRef = ref.current;
-        if (currentRef) {
-            observer.observe(currentRef);
+        const element = ref.current;
+        if (element) {
+            gsap.fromTo(
+                element,
+                { y: 50, opacity: 0, scale: 0.95 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    scale: 1,
+                    duration: 0.7,
+                    ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 85%', // Animation starts when the top of the element is 85% from the top of the viewport
+                        end: 'bottom 20%',
+                        toggleActions: 'play none none none',
+                    },
+                }
+            );
         }
-
-        return () => {
-            if (currentRef) {
-                observer.unobserve(currentRef);
-            }
-        };
     }, []);
 
     return (
-        <div ref={ref} className={cn('scroll-animate', isVisible && 'is-visible', className)}>
+        <div ref={ref} className={cn(className)}>
             {children}
         </div>
     );
