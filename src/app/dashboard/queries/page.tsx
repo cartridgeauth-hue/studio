@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { DUMMY_QUERIES } from '@/lib/dummy-data';
 import type { Query } from '@/lib/definitions';
 import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Badge } from '@/components/ui/badge';
 import { format, formatDistanceToNow } from 'date-fns';
@@ -22,12 +21,6 @@ const problemTypeLabels: { [key in Query['problemType']]: string } = {
   gst: 'GST',
   other: 'Other',
 };
-
-const statusColors: { [key in Query['status']]: string } = {
-    new: 'bg-red-500',
-    read: 'bg-blue-500',
-    archived: 'bg-gray-500'
-}
 
 export default function QueriesPage() {
   const [queries, setQueries] = useState<Query[]>(DUMMY_QUERIES);
@@ -54,8 +47,8 @@ export default function QueriesPage() {
 
 
   return (
-    <div className="h-[calc(100vh-10rem)] bg-card border rounded-lg flex">
-        <aside className="w-1/3 border-r flex flex-col">
+    <div className="h-[calc(100vh-10rem)] bg-card border rounded-lg flex overflow-hidden">
+        <aside className="w-full md:w-1/3 border-r flex flex-col">
             <div className="p-4 border-b">
                 <h1 className="text-2xl font-bold font-headline">Inbox</h1>
                 <div className="relative mt-4">
@@ -80,8 +73,8 @@ export default function QueriesPage() {
                    {filteredQueries.map(query => (
                        <li key={query.id} onClick={() => handleSelectQuery(query)} className={`p-4 cursor-pointer hover:bg-muted ${selectedQuery?.id === query.id ? 'bg-muted' : ''}`}>
                             <div className="flex items-center justify-between">
-                                <h3 className="font-semibold">{query.name}</h3>
-                                <p className="text-xs text-muted-foreground">{formatDistanceToNow(new Date(query.receivedAt), { addSuffix: true })}</p>
+                                <h3 className="font-semibold truncate">{query.name}</h3>
+                                <p className="text-xs text-muted-foreground flex-shrink-0 ml-2">{formatDistanceToNow(new Date(query.receivedAt), { addSuffix: true })}</p>
                             </div>
                             <p className="text-sm text-muted-foreground truncate">{query.description}</p>
                              <div className='flex items-center gap-2 mt-2'>
@@ -93,7 +86,7 @@ export default function QueriesPage() {
                 </ul>
             </div>
         </aside>
-        <main className="flex-1 flex flex-col min-w-0">
+        <main className="hidden md:flex flex-1 flex-col min-w-0">
             {selectedQuery ? (
                 <>
                 <div className="p-4 border-b flex items-center justify-between gap-4">
