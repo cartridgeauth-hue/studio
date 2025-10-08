@@ -31,11 +31,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <SidebarProvider>
             <Sidebar collapsible="icon" variant="floating">
                 <SidebarHeader>
-                    <div className="flex items-center justify-between p-2">
+                    <div className="flex items-center justify-center p-2">
                          <div className="flex items-center gap-2 p-2">
                            <Briefcase className="h-6 w-6 text-accent" />
                          </div>
-                         <SidebarTrigger className='hidden md:flex' />
                     </div>
                 </SidebarHeader>
                 <SidebarContent>
@@ -63,7 +62,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                     <SidebarTrigger className="md:hidden" />
                     <Button variant="outline" asChild><Link href="/">View Site</Link></Button>
                 </header>
-                <div className="p-4 sm:p-6 lg:p-8">{children}</div>
+                <div className="px-4 py-8 sm:px-6 lg:px-52">{children}</div>
             </SidebarInset>
         </SidebarProvider>
     );
