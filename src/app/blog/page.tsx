@@ -70,7 +70,7 @@ const DUMMY_POSTS: BlogPost[] = [
 
 export default function BlogPage() {
     return (
-        <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="container mx-auto px-12 py-16 md:py-24">
             <ScrollAnimationWrapper>
                 <h1 className="font-headline text-4xl md:text-5xl font-bold text-center mb-4">Our Blog</h1>
                 <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12">

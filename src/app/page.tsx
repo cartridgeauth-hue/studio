@@ -64,8 +64,8 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center">
       {/* Hero Section */}
-      <section className="w-full text-center bg-background flex items-center justify-center min-h-screen">
-        <div className="container mx-auto px-4">
+      <section className="w-full text-center bg-background flex items-center justify-center min-h-[100vh]">
+        <div className="container mx-auto px-12">
           <ScrollAnimationWrapper>
             <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-4">
               Expert Guidance, Simplified.
@@ -82,85 +82,144 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="services" className="w-full py-16 md:py-24 bg-accent text-accent-foreground overflow-x-hidden">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-12">
           <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
               Our Services
             </h2>
           </ScrollAnimationWrapper>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {services.map((service, index) => (
-              <ScrollAnimationWrapper 
-                key={index}
-                animation={
-                  (index % 2 === 0) ? { x: -100, opacity: 0, scale: 0.95 } : // Left column
-                  { x: 100, opacity: 0, scale: 0.95 } // Right column
-                }
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+             <ScrollAnimationWrapper 
+                animation={{ x: -100, opacity: 0, scale: 0.95 }}
               >
                 <Card className="h-full bg-white border-border/20 hover:bg-gray-200 transition-colors duration-300 text-black">
                   <CardHeader className="flex flex-row items-center gap-4">
-                    {service.icon}
-                    <CardTitle className="font-headline text-xl text-black">{service.title}</CardTitle>
+                    {services[0].icon}
+                    <CardTitle className="font-headline text-xl text-black">{services[0].title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-black/80">{service.description}</p>
+                    <p className="text-black/80">{services[0].description}</p>
                   </CardContent>
                 </Card>
               </ScrollAnimationWrapper>
-            ))}
+              <ScrollAnimationWrapper 
+                animation={{ x: 100, opacity: 0, scale: 0.95 }}
+              >
+                <Card className="h-full bg-white border-border/20 hover:bg-gray-200 transition-colors duration-300 text-black">
+                  <CardHeader className="flex flex-row items-center gap-4">
+                    {services[1].icon}
+                    <CardTitle className="font-headline text-xl text-black">{services[1].title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-black/80">{services[1].description}</p>
+                  </CardContent>
+                </Card>
+              </ScrollAnimationWrapper>
+              <ScrollAnimationWrapper 
+                animation={{ x: -100, opacity: 0, scale: 0.95 }}
+              >
+                <Card className="h-full bg-white border-border/20 hover:bg-gray-200 transition-colors duration-300 text-black">
+                  <CardHeader className="flex flex-row items-center gap-4">
+                    {services[2].icon}
+                    <CardTitle className="font-headline text-xl text-black">{services[2].title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-black/80">{services[2].description}</p>
+                  </CardContent>
+                </Card>
+              </ScrollAnimationWrapper>
+               <ScrollAnimationWrapper 
+                animation={{ x: 100, opacity: 0, scale: 0.95 }}
+              >
+                <Card className="h-full bg-white border-border/20 hover:bg-gray-200 transition-colors duration-300 text-black">
+                  <CardHeader className="flex flex-row items-center gap-4">
+                    {services[3].icon}
+                    <CardTitle className="font-headline text-xl text-black">{services[3].title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-black/80">{services[3].description}</p>
+                  </CardContent>
+                </Card>
+              </ScrollAnimationWrapper>
+              <ScrollAnimationWrapper 
+                animation={{ x: -100, opacity: 0, scale: 0.95 }}
+              >
+                <Card className="h-full bg-white border-border/20 hover:bg-gray-200 transition-colors duration-300 text-black">
+                  <CardHeader className="flex flex-row items-center gap-4">
+                    {services[4].icon}
+                    <CardTitle className="font-headline text-xl text-black">{services[4].title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-black/80">{services[4].description}</p>
+                  </CardContent>
+                </Card>
+              </ScrollAnimationWrapper>
+               <ScrollAnimationWrapper 
+                animation={{ x: 100, opacity: 0, scale: 0.95 }}
+              >
+                <Card className="h-full bg-white border-border/20 hover:bg-gray-200 transition-colors duration-300 text-black">
+                  <CardHeader className="flex flex-row items-center gap-4">
+                    {services[5].icon}
+                    <CardTitle className="font-headline text-xl text-black">{services[5].title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-black/80">{services[5].description}</p>
+                  </CardContent>
+                </Card>
+              </ScrollAnimationWrapper>
           </div>
         </div>
       </section>
 
       {/* Featured Blog Posts */}
       <section className="w-full py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4">
-          <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
-              From Our Blog
-            </h2>
-          </ScrollAnimationWrapper>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {featuredPosts.map((post) => (
-              <ScrollAnimationWrapper key={post.id} animation={{ y: 50, opacity: 0, scale: 0.95 }}>
-                <Link href={`/blog/${post.id}`}>
-                  <Card className="group overflow-hidden h-full">
-                    {post.image && (
-                      <div className="overflow-hidden">
-                        <Image
-                          src={post.image.imageUrl}
-                          alt={post.image.description}
-                          width={600}
-                          height={400}
-                          data-ai-hint={post.image.imageHint}
-                          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                      </div>
-                    )}
-                    <CardHeader>
-                      <CardTitle className="font-headline text-xl group-hover:text-primary transition-colors">{post.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground">{post.excerpt}</p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              </ScrollAnimationWrapper>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Button asChild variant="outline">
-              <Link href="/blog">
-                Read More Posts <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
+        <div className="container mx-auto px-12">
+            <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
+                <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
+                    From Our Blog
+                </h2>
+            </ScrollAnimationWrapper>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {featuredPosts.map((post) => (
+                    <ScrollAnimationWrapper key={post.id} animation={{ y: 50, opacity: 0, scale: 0.95 }}>
+                        <Link href={`/blog/${post.id}`}>
+                            <Card className="group overflow-hidden h-full">
+                                {post.image && (
+                                    <div className="overflow-hidden">
+                                        <Image
+                                            src={post.image.imageUrl}
+                                            alt={post.image.description}
+                                            width={600}
+                                            height={400}
+                                            data-ai-hint={post.image.imageHint}
+                                            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                                        />
+                                    </div>
+                                )}
+                                <CardHeader>
+                                    <CardTitle className="font-headline text-xl group-hover:text-primary transition-colors">{post.title}</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-muted-foreground">{post.excerpt}</p>
+                                </CardContent>
+                            </Card>
+                        </Link>
+                    </ScrollAnimationWrapper>
+                ))}
+            </div>
+            <div className="text-center mt-12">
+                <Button asChild variant="outline">
+                    <Link href="/blog">
+                        Read More Posts <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                </Button>
+            </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="w-full py-16 md:py-24 bg-accent">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-12 text-center">
           <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
             <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4 text-accent-foreground">
               Ready to Solve Your Queries?
