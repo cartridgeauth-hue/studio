@@ -21,8 +21,8 @@ export default function ContactPage() {
                                 <Mail className="w-6 h-6 text-accent" />
                                 <div>
                                     <h3 className="font-semibold">Email</h3>
-                                    <a href="mailto:contact@serviceflow.com" className="text-muted-foreground hover:text-accent transition-colors">
-                                        contact@serviceflow.com
+                                    <a href="mailto:contact@theledgerco.in" className="text-muted-foreground hover:text-accent transition-colors">
+                                        contact@theledgerco.in
                                     </a>
                                 </div>
                             </div>

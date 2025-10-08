@@ -66,7 +66,7 @@ export default function Home() {
               Expert Guidance, Simplified.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              ServiceFlow provides seamless access to professional consultations for your financial and legal queries. Book your appointment today and gain clarity.
+              theledgerco.in provides seamless access to professional consultations for your financial and legal queries. Book your appointment today and gain clarity.
             </p>
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
               <Link href="/contact">Book an Appointment</Link>

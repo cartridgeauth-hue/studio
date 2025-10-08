@@ -4,7 +4,7 @@ export default function Logo() {
   return (
     <div className="flex items-center gap-2">
       <Briefcase className="h-6 w-6 text-accent" />
-      <span className="font-bold text-xl font-headline">ServiceFlow</span>
+      <span className="font-bold text-xl font-headline">theledgerco.in</span>
     </div>
   );
 }

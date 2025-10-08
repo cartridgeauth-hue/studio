@@ -5,7 +5,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'ServiceFlow',
+  title: 'theledgerco.in',
   description: 'Expert consultations for your financial and legal needs.',
 };
 

@@ -42,7 +42,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border/40 pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} ServiceFlow. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} theledgerco.in. All rights reserved.</p>
         </div>
       </div>
     </footer>
