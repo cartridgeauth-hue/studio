@@ -23,6 +23,11 @@ const services = [
     description: 'Quick and easy processing of digital stamp papers.',
   },
   {
+    icon: <FileText className="w-8 h-8 text-accent" />,
+    title: 'Notarisation of documents',
+    description: 'Reliable and official notarisation for all your important documents.',
+  },
+  {
     icon: <MessageSquareQuote className="w-8 h-8 text-accent" />,
     title: 'Income Tax Queries',
     description: 'Professional advice for your income tax filings and issues.',

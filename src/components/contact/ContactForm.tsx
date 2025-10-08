@@ -63,6 +63,7 @@ export default function ContactForm() {
             <SelectItem value="epfo">EPFO Queries</SelectItem>
             <SelectItem value="esic">ESIC Queries</SelectItem>
             <SelectItem value="estamps">Issuance of eStamps</SelectItem>
+            <SelectItem value="notarisation">Notarisation of documents</SelectItem>
             <SelectItem value="income-tax">Income Tax Queries</SelectItem>
             <SelectItem value="gst">GST Queries</SelectItem>
             <SelectItem value="other">Other</SelectItem>
