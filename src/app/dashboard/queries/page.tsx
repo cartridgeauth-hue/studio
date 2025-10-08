@@ -93,13 +93,13 @@ export default function QueriesPage() {
                 </ul>
             </div>
         </aside>
-        <main className="w-2/3 flex flex-col">
+        <main className="w-2/3 flex flex-col min-w-0">
             {selectedQuery ? (
                 <>
                 <div className="p-4 border-b flex items-center justify-between">
                     <div>
-                        <h2 className="text-xl font-bold">{selectedQuery.name}</h2>
-                        <a href={`mailto:${selectedQuery.email}`} className="text-sm text-muted-foreground hover:text-accent">{selectedQuery.email}</a>
+                        <h2 className="text-xl font-bold truncate">{selectedQuery.name}</h2>
+                        <a href={`mailto:${selectedQuery.email}`} className="text-sm text-muted-foreground hover:text-accent truncate">{selectedQuery.email}</a>
                     </div>
                      <div className="flex items-center gap-2">
                         <Button variant="ghost" size="icon"><Archive className="w-5 h-5"/></Button>
