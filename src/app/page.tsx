@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -5,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, FileText, Landmark, MessageSquareQuote } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import ScrollAnimationWrapper from '@/components/shared/ScrollAnimationWrapper';
+import { DUMMY_POSTS } from '@/lib/dummy-data';
 
 const services = [
   {
@@ -39,26 +41,7 @@ const services = [
   },
 ];
 
-const featuredPosts = [
-  {
-    id: '1',
-    title: 'Navigating the Labyrinth of GST',
-    excerpt: 'A deep dive into the Goods and Services Tax system and how to stay compliant.',
-    image: PlaceHolderImages.find(p => p.id === 'blog-1'),
-  },
-  {
-    id: '2',
-    title: 'The Future of Digital Stamping',
-    excerpt: 'Exploring the shift to eStamps and what it means for legal documentation.',
-    image: PlaceHolderImages.find(p => p.id === 'blog-2'),
-  },
-  {
-    id: '3',
-    title: 'Maximizing Your EPF Returns',
-    excerpt: 'Strategies and tips to make the most out of your employee provident fund.',
-    image: PlaceHolderImages.find(p => p.id === 'blog-3'),
-  },
-];
+const featuredPosts = DUMMY_POSTS.slice(0, 3);
 
 export default function Home() {
   return (
@@ -173,48 +156,48 @@ export default function Home() {
 
       {/* Featured Blog Posts */}
       <section className="w-full py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-12 lg:px-52">
-            <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
-                <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
-                    From Our Blog
-                </h2>
-            </ScrollAnimationWrapper>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {featuredPosts.map((post) => (
-                    <ScrollAnimationWrapper key={post.id} animation={{ y: 50, opacity: 0, scale: 0.95 }}>
-                        <Link href={`/blog/${post.id}`}>
-                            <Card className="group overflow-hidden h-full">
-                                {post.image && (
-                                    <div className="overflow-hidden">
-                                        <Image
-                                            src={post.image.imageUrl}
-                                            alt={post.image.description}
-                                            width={600}
-                                            height={400}
-                                            data-ai-hint={post.image.imageHint}
-                                            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                                        />
-                                    </div>
-                                )}
-                                <CardHeader>
-                                    <CardTitle className="font-headline text-xl group-hover:text-primary transition-colors">{post.title}</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-muted-foreground">{post.excerpt}</p>
-                                </CardContent>
-                            </Card>
-                        </Link>
-                    </ScrollAnimationWrapper>
-                ))}
-            </div>
-            <div className="text-center mt-12">
-                <Button asChild variant="outline">
-                    <Link href="/blog">
-                        Read More Posts <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                </Button>
-            </div>
-        </div>
+          <div className="container mx-auto px-12 lg:px-52">
+              <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
+                  <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
+                      From Our Blog
+                  </h2>
+              </ScrollAnimationWrapper>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  {featuredPosts.map((post) => (
+                      <ScrollAnimationWrapper key={post.id} animation={{ y: 50, opacity: 0, scale: 0.95 }}>
+                          <Link href={`/blog/${post.slug}`}>
+                              <Card className="group overflow-hidden h-full">
+                                  {post.image && (
+                                      <div className="overflow-hidden">
+                                          <Image
+                                              src={post.image.imageUrl}
+                                              alt={post.image.description}
+                                              width={600}
+                                              height={400}
+                                              data-ai-hint={post.image.imageHint}
+                                              className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                                          />
+                                      </div>
+                                  )}
+                                  <CardHeader>
+                                      <CardTitle className="font-headline text-xl group-hover:text-primary transition-colors">{post.title}</CardTitle>
+                                  </CardHeader>
+                                  <CardContent>
+                                      <p className="text-muted-foreground">{post.excerpt}</p>
+                                  </CardContent>
+                              </Card>
+                          </Link>
+                      </ScrollAnimationWrapper>
+                  ))}
+              </div>
+              <div className="text-center mt-12">
+                  <Button asChild variant="outline">
+                      <Link href="/blog">
+                          Read More Posts <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                  </Button>
+              </div>
+          </div>
       </section>
 
       {/* CTA Section */}
