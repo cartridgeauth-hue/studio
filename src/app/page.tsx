@@ -88,15 +88,14 @@ export default function Home() {
               Our Services
             </h2>
           </ScrollAnimationWrapper>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {services.map((service, index) => (
               <ScrollAnimationWrapper 
                 key={index}
-                animation={{ 
-                  x: (index % 3 === 0) ? -100 : (index % 3 === 2) ? 100 : 0, 
-                  opacity: 0, 
-                  scale: 0.95 
-                }}
+                animation={
+                  (index % 2 === 0) ? { x: -100, opacity: 0, scale: 0.95 } : // Left column
+                  { x: 100, opacity: 0, scale: 0.95 } // Right column
+                }
               >
                 <Card className="h-full bg-white border-border/20 hover:bg-gray-200 transition-colors duration-300 text-black">
                   <CardHeader className="flex flex-row items-center gap-4">
