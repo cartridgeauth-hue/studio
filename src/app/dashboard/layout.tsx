@@ -10,8 +10,6 @@ import {
     SidebarMenuItem,
     SidebarMenuButton,
     SidebarInset,
-    SidebarTrigger,
-    SidebarRail,
 } from '@/components/ui/sidebar';
 import { Button } from '@/components/ui/button';
 import { Briefcase, FileText, Home, MessageSquare, PlusCircle, UserCircle } from 'lucide-react';
@@ -29,7 +27,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
     return (
         <SidebarProvider>
-            <Sidebar collapsible="icon" variant="floating">
+            <Sidebar collapsible="none" variant="floating" className="w-auto">
                 <SidebarHeader>
                     <div className="flex items-center justify-center p-2">
                          <div className="flex items-center gap-2 p-2">
@@ -45,7 +43,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                                     <SidebarMenuButton 
                                         size="lg"
                                         isActive={pathname.startsWith(item.href) && (item.href === '/dashboard' ? pathname === item.href : true)}
-                                        tooltip={item.label}
                                     >
                                         {item.icon}
                                         <span>{item.label}</span>
@@ -55,11 +52,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                         ))}
                     </SidebarMenu>
                 </SidebarContent>
-                <SidebarRail />
             </Sidebar>
             <SidebarInset>
-                <header className="flex items-center justify-between p-4 border-b md:justify-end">
-                    <SidebarTrigger className="md:hidden" />
+                <header className="flex items-center justify-end p-4 border-b">
                     <Button variant="outline" asChild><Link href="/">View Site</Link></Button>
                 </header>
                 <div className="px-4 py-8 sm:px-6 lg:px-52">{children}</div>
