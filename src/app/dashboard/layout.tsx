@@ -14,8 +14,7 @@ import {
     SidebarRail,
 } from '@/components/ui/sidebar';
 import { Button } from '@/components/ui/button';
-import Logo from '@/components/shared/Logo';
-import { FileText, Home, MessageSquare, PlusCircle, UserCircle } from 'lucide-react';
+import { Briefcase, FileText, Home, MessageSquare, PlusCircle, UserCircle } from 'lucide-react';
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
@@ -33,7 +32,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             <Sidebar collapsible="icon" variant="floating">
                 <SidebarHeader>
                     <div className="flex items-center justify-between p-2">
-                         <Logo />
+                         <div className="flex items-center gap-2 p-2">
+                           <Briefcase className="h-6 w-6 text-accent" />
+                         </div>
                          <SidebarTrigger className='hidden md:flex' />
                     </div>
                 </SidebarHeader>
