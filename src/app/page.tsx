@@ -65,7 +65,7 @@ export default function Home() {
     <div className="flex flex-col items-center">
       {/* Hero Section */}
       <section className="w-full text-center bg-background flex items-center justify-center min-h-screen">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <ScrollAnimationWrapper>
             <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-4">
               Expert Guidance, Simplified.
@@ -159,7 +159,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full py-20 md:py-32 bg-accent">
+      <section className="w-full py-16 md:py-24 bg-accent">
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
             <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4 text-accent-foreground">
