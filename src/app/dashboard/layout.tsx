@@ -55,7 +55,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             </Sidebar>
             <SidebarInset>
                 <header className="flex items-center justify-end p-4 border-b">
-                    <Button variant="outline" asChild><Link href="/">View Site</Link></Button>
                 </header>
                 <div className="px-4 py-8 sm:px-6 lg:px-52">{children}</div>
             </SidebarInset>
