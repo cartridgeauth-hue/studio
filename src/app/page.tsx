@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center">
       {/* Hero Section */}
-      <section className="w-full text-center py-20 md:py-32 bg-background">
+      <section className="w-full text-center bg-background flex items-center justify-center min-h-screen">
         <div className="container mx-auto px-4">
           <ScrollAnimationWrapper>
             <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-4">
