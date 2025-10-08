@@ -8,32 +8,32 @@ import ScrollAnimationWrapper from '@/components/shared/ScrollAnimationWrapper';
 
 const services = [
   {
-    icon: <Landmark className="w-8 h-8 text-accent" />,
+    icon: <Landmark className="w-8 h-8 text-accent-foreground" />,
     title: 'EPFO Queries',
     description: 'Expert guidance on employee provident fund matters.',
   },
   {
-    icon: <Landmark className="w-8 h-8 text-accent" />,
+    icon: <Landmark className="w-8 h-8 text-accent-foreground" />,
     title: 'ESIC Queries',
     description: 'Resolving all your ESIC-related questions and concerns.',
   },
   {
-    icon: <FileText className="w-8 h-8 text-accent" />,
+    icon: <FileText className="w-8 h-8 text-accent-foreground" />,
     title: 'Issuance of eStamps',
     description: 'Quick and easy processing of digital stamp papers.',
   },
   {
-    icon: <FileText className="w-8 h-8 text-accent" />,
+    icon: <FileText className="w-8 h-8 text-accent-foreground" />,
     title: 'Notarisation of documents',
     description: 'Reliable and official notarisation for all your important documents.',
   },
   {
-    icon: <MessageSquareQuote className="w-8 h-8 text-accent" />,
+    icon: <MessageSquareQuote className="w-8 h-8 text-accent-foreground" />,
     title: 'Income Tax Queries',
     description: 'Professional advice for your income tax filings and issues.',
   },
   {
-    icon: <MessageSquareQuote className="w-8 h-8 text-accent" />,
+    icon: <MessageSquareQuote className="w-8 h-8 text-accent-foreground" />,
     title: 'GST Queries',
     description: 'Comprehensive support for all your GST needs.',
   },
@@ -81,7 +81,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="w-full py-16 md:py-24 bg-card/50 overflow-x-hidden">
+      <section id="services" className="w-full py-16 md:py-24 bg-accent text-accent-foreground overflow-x-hidden">
         <div className="container mx-auto px-4">
           <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
@@ -98,13 +98,13 @@ export default function Home() {
                   scale: 0.95 
                 }}
               >
-                <Card className="h-full bg-background border-border/50 hover:border-accent transition-colors duration-300">
+                <Card className="h-full bg-accent/80 border-accent-foreground/20 hover:bg-accent/90 transition-colors duration-300 text-accent-foreground">
                   <CardHeader className="flex flex-row items-center gap-4">
                     {service.icon}
                     <CardTitle className="font-headline text-xl">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{service.description}</p>
+                    <p className="text-accent-foreground/80">{service.description}</p>
                   </CardContent>
                 </Card>
               </ScrollAnimationWrapper>
@@ -139,7 +139,7 @@ export default function Home() {
                       </div>
                     )}
                     <CardHeader>
-                      <CardTitle className="font-headline text-xl group-hover:text-accent transition-colors">{post.title}</CardTitle>
+                      <CardTitle className="font-headline text-xl group-hover:text-primary transition-colors">{post.title}</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">{post.excerpt}</p>
@@ -169,7 +169,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Don't let questions linger. Get expert advice tailored to your needs.
             </p>
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
               <Link href="/contact">Get in Touch</Link>
             </Button>
           </ScrollAnimationWrapper>
