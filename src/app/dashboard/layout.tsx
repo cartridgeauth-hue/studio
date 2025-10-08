@@ -11,6 +11,7 @@ import {
     SidebarMenuButton,
     SidebarInset,
     SidebarTrigger,
+    SidebarRail,
 } from '@/components/ui/sidebar';
 import { Button } from '@/components/ui/button';
 import Logo from '@/components/shared/Logo';
@@ -29,18 +30,23 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
     return (
         <SidebarProvider>
-            <Sidebar>
+            <Sidebar collapsible="icon">
                 <SidebarHeader>
                     <div className="flex items-center justify-between p-2">
                          <Logo />
+                         <SidebarTrigger className='hidden md:flex' />
                     </div>
                 </SidebarHeader>
                 <SidebarContent>
-                    <SidebarMenu className='gap-2'>
+                    <SidebarMenu className='gap-4'>
                         {navItems.map((item) => (
                             <SidebarMenuItem key={item.href}>
                                 <Link href={item.href}>
-                                    <SidebarMenuButton isActive={pathname.startsWith(item.href) && (item.href === '/dashboard' ? pathname === item.href : true)}>
+                                    <SidebarMenuButton 
+                                        size="lg"
+                                        isActive={pathname.startsWith(item.href) && (item.href === '/dashboard' ? pathname === item.href : true)}
+                                        tooltip={item.label}
+                                    >
                                         {item.icon}
                                         <span>{item.label}</span>
                                     </SidebarMenuButton>
@@ -49,6 +55,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                         ))}
                     </SidebarMenu>
                 </SidebarContent>
+                <SidebarRail />
             </Sidebar>
             <SidebarInset>
                 <header className="flex items-center justify-between p-4 border-b md:justify-end">
