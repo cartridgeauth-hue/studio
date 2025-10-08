@@ -1,6 +1,5 @@
 
 import { notFound } from 'next/navigation';
-import BlogContentGenerator from '@/components/blog/BlogContentGenerator';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -18,9 +17,7 @@ export default function EditBlogPostPage({ params }: { params: { postId: string 
         <div className="space-y-8">
             <h1 className="text-3xl font-bold font-headline">Edit Blog Post</h1>
             
-            <BlogContentGenerator />
-
-            <div className="space-y-6 pt-8 border-t">
+            <div className="space-y-6">
                 <h2 className="text-2xl font-bold font-headline">Edit & Finalize Your Post</h2>
                 <div className="space-y-4">
                     <Label htmlFor="title">Blog Title</Label>
