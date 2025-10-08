@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "blog-1",
+      "description": "An abstract image representing financial charts and graphs.",
+      "imageUrl": "https://picsum.photos/seed/blog1/600/400",
+      "imageHint": "finance chart"
+    },
+    {
+      "id": "blog-2",
+      "description": "A close-up of a person signing a digital document on a tablet.",
+      "imageUrl": "https://picsum.photos/seed/blog2/600/400",
+      "imageHint": "digital signature"
+    },
+    {
+      "id": "blog-3",
+      "description": "A piggy bank with coins, symbolizing savings and investment.",
+      "imageUrl": "https://picsum.photos/seed/blog3/600/400",
+      "imageHint": "savings investment"
+    },
+    {
+      "id": "blog-4",
+      "description": "A modern office setting with laptops and documents.",
+      "imageUrl": "https://picsum.photos/seed/blog4/600/400",
+      "imageHint": "office business"
+    },
+    {
+      "id": "blog-5",
+      "description": "People in a professional meeting discussing documents.",
+      "imageUrl": "https://picsum.photos/seed/blog5/600/400",
+      "imageHint": "business meeting"
+    },
+    {
+      "id": "blog-6",
+      "description": "A person typing on a laptop, representing writing or coding.",
+      "imageUrl": "https://picsum.photos/seed/blog6/600/400",
+      "imageHint": "writing laptop"
+    },
+    {
+      "id": "author-1",
+      "description": "A professional headshot of an author.",
+      "imageUrl": "https://picsum.photos/seed/author1/100/100",
+      "imageHint": "professional portrait"
+    }
+  ]
 }
