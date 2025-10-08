@@ -76,16 +76,23 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="w-full py-16 md:py-24 bg-card/50">
+      <section id="services" className="w-full py-16 md:py-24 bg-card/50 overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <ScrollAnimationWrapper>
+          <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
               Our Services
             </h2>
           </ScrollAnimationWrapper>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <ScrollAnimationWrapper key={index}>
+              <ScrollAnimationWrapper 
+                key={index}
+                animation={{ 
+                  x: (index % 3 === 0) ? -100 : (index % 3 === 2) ? 100 : 0, 
+                  opacity: 0, 
+                  scale: 0.95 
+                }}
+              >
                 <Card className="h-full bg-background border-border/50 hover:border-accent transition-colors duration-300">
                   <CardHeader className="flex flex-row items-center gap-4">
                     {service.icon}
@@ -104,14 +111,14 @@ export default function Home() {
       {/* Featured Blog Posts */}
       <section className="w-full py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <ScrollAnimationWrapper>
+          <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
               From Our Blog
             </h2>
           </ScrollAnimationWrapper>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {featuredPosts.map((post) => (
-              <ScrollAnimationWrapper key={post.id}>
+              <ScrollAnimationWrapper key={post.id} animation={{ y: 50, opacity: 0, scale: 0.95 }}>
                 <Link href={`/blog/${post.id}`}>
                   <Card className="group overflow-hidden h-full">
                     {post.image && (
@@ -150,7 +157,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="w-full py-20 md:py-32 bg-card/50">
         <div className="container mx-auto px-4 text-center">
-          <ScrollAnimationWrapper>
+          <ScrollAnimationWrapper animation={{ y: 50, opacity: 0, scale: 0.95 }}>
             <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">
               Ready to Solve Your Queries?
             </h2>

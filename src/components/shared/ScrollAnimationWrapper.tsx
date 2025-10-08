@@ -9,9 +9,14 @@ gsap.registerPlugin(ScrollTrigger);
 interface ScrollAnimationWrapperProps {
     children: ReactNode;
     className?: string;
+    animation?: gsap.TweenVars;
 }
 
-export default function ScrollAnimationWrapper({ children, className }: ScrollAnimationWrapperProps) {
+export default function ScrollAnimationWrapper({ 
+    children, 
+    className, 
+    animation = { y: 50, opacity: 0, scale: 0.95 } 
+}: ScrollAnimationWrapperProps) {
     const ref = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -19,23 +24,25 @@ export default function ScrollAnimationWrapper({ children, className }: ScrollAn
         if (element) {
             gsap.fromTo(
                 element,
-                { y: 50, opacity: 0, scale: 0.95 },
+                animation,
                 {
                     y: 0,
+                    x: 0,
                     opacity: 1,
                     scale: 1,
-                    duration: 0.7,
+                    duration: 1,
                     ease: 'power3.out',
                     scrollTrigger: {
                         trigger: element,
-                        start: 'top 85%', // Animation starts when the top of the element is 85% from the top of the viewport
+                        start: 'top 85%',
                         end: 'bottom 20%',
-                        toggleActions: 'play none none none',
+                        scrub: 1, // Link animation to scroll position
+                        toggleActions: 'play reverse play reverse',
                     },
                 }
             );
         }
-    }, []);
+    }, [animation]);
 
     return (
         <div ref={ref} className={cn(className)}>
