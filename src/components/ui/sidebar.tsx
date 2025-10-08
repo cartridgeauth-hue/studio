@@ -181,7 +181,7 @@ const Sidebar = React.forwardRef<
       return (
         <div
           className={cn(
-            "flex h-full w-[--sidebar-width] flex-col bg-sidebar text-sidebar-foreground",
+            "flex h-full w-auto flex-col bg-sidebar text-sidebar-foreground",
             className
           )}
           ref={ref}
@@ -215,7 +215,7 @@ const Sidebar = React.forwardRef<
     return (
       <div
         ref={ref}
-        className="group peer hidden md:block text-sidebar-foreground z-20"
+        className="group peer hidden md:block text-sidebar-foreground z-30"
         data-state={state}
         data-collapsible={state === "collapsed" ? collapsible : ""}
         data-variant={variant}
@@ -225,7 +225,7 @@ const Sidebar = React.forwardRef<
         <div
           className={cn(
             "duration-200 relative bg-transparent transition-[width] ease-linear",
-            "w-[var(--sidebar-width)] h-svh",
+            "w-0 h-svh",
             "group-data-[collapsible=offcanvas]:w-0",
             "group-data-[side=right]:rotate-180",
             variant === "floating" || variant === "inset"
@@ -236,7 +236,7 @@ const Sidebar = React.forwardRef<
         <div
           className={cn(
             "duration-200 fixed inset-y-0 hidden transition-[left,right,width] ease-linear md:flex",
-            "w-[var(--sidebar-width)] h-svh",
+            "w-auto h-svh",
             side === "left"
               ? "left-0 group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)]"
               : "right-0 group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)]",
@@ -245,7 +245,7 @@ const Sidebar = React.forwardRef<
               ? "p-2 group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4)_+2px)]"
               : "group-data-[collapsible=icon]:w-[var(--sidebar-width-icon)] group-data-[side=left]:border-r group-data-[side=right]:border-l",
             variant === "floating" &&
-              "h-fit top-1/2 -translate-y-1/2",
+              "h-fit top-1/2 -translate-y-1/2 ml-2",
             className
           )}
           {...props}
