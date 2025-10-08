@@ -29,10 +29,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 <header className="mb-12 text-center">
                     <h1 className="font-headline text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
                     <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground">
-                        <div className="flex items-center gap-2">
+                        <Link href={`/author/${post.author.id}`} className="flex items-center gap-2 hover:text-accent transition-colors">
                            <UserCircle className='w-4 h-4' />
                            <span>{post.author.name}</span>
-                        </div>
+                        </Link>
                         <span className="text-muted-foreground/50">|</span>
                         <div className="flex items-center gap-2">
                             <Calendar className="w-4 h-4" />
@@ -59,16 +59,18 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </article>
             
             <aside className="max-w-4xl mx-auto mt-16 pt-12 border-t">
-                 <div className='flex items-center gap-4 p-6 rounded-lg bg-card border'>
-                    <Avatar className='w-16 h-16'>
-                        <AvatarImage src={post.author.avatar.imageUrl} alt={post.author.name} data-ai-hint={post.author.avatar.imageHint} />
-                        <AvatarFallback>{post.author.name.charAt(0)}</AvatarFallback>
-                    </Avatar>
-                    <div>
-                        <h3 className="font-headline text-xl font-bold">About {post.author.name}</h3>
-                        <p className='text-muted-foreground mt-1'>{post.author.bio}</p>
+                 <Link href={`/author/${post.author.id}`} className='block group'>
+                    <div className='flex items-center gap-4 p-6 rounded-lg bg-card border group-hover:border-accent transition-colors'>
+                        <Avatar className='w-16 h-16'>
+                            <AvatarImage src={post.author.avatar.imageUrl} alt={post.author.name} data-ai-hint={post.author.avatar.imageHint} />
+                            <AvatarFallback>{post.author.name.charAt(0)}</AvatarFallback>
+                        </Avatar>
+                        <div>
+                            <h3 className="font-headline text-xl font-bold group-hover:text-accent transition-colors">About {post.author.name}</h3>
+                            <p className='text-muted-foreground mt-1'>{post.author.bio}</p>
+                        </div>
                     </div>
-                 </div>
+                 </Link>
             </aside>
 
              <aside className="max-w-4xl mx-auto mt-16 pt-12 border-t">
@@ -87,7 +89,3 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </div>
     );
 }
-
-// Add basic prose styles to globals.css if they are not there
-// You might need to install @tailwindcss/typography if not already installed.
-// The "prose" classes are used above for styling the blog content.

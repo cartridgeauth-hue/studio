@@ -14,13 +14,14 @@ import {
 } from '@/components/ui/sidebar';
 import { Button } from '@/components/ui/button';
 import Logo from '@/components/shared/Logo';
-import { FileText, Home, PlusCircle, UserCircle } from 'lucide-react';
+import { FileText, Home, MessageSquare, PlusCircle, UserCircle } from 'lucide-react';
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
 
     const navItems = [
         { href: '/dashboard', label: 'Dashboard', icon: <Home /> },
+        { href: '/dashboard/queries', label: 'Queries', icon: <MessageSquare /> },
         { href: '/dashboard/blog', label: 'My Posts', icon: <FileText /> },
         { href: '/dashboard/blog/new', label: 'New Post', icon: <PlusCircle /> },
         { href: '/dashboard/profile', label: 'Profile', icon: <UserCircle /> },
@@ -39,7 +40,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                         {navItems.map((item) => (
                             <SidebarMenuItem key={item.href}>
                                 <Link href={item.href}>
-                                    <SidebarMenuButton isActive={pathname === item.href}>
+                                    <SidebarMenuButton isActive={pathname.startsWith(item.href) && (item.href === '/dashboard' ? pathname === item.href : true)}>
                                         {item.icon}
                                         <span>{item.label}</span>
                                     </SidebarMenuButton>

@@ -17,3 +17,13 @@ export type BlogPost = {
   author: Author;
   publishedAt: string;
 };
+
+export type Query = {
+  id: string;
+  name: string;
+  email: string;
+  problemType: 'epfo' | 'esic' | 'estamps' | 'notarisation' | 'income-tax' | 'gst' | 'other';
+  description: string;
+  receivedAt: string;
+  status: 'new' | 'read' | 'archived';
+}

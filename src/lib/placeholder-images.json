@@ -39,8 +39,14 @@
     {
       "id": "author-1",
       "description": "A professional headshot of an author.",
-      "imageUrl": "https://picsum.photos/seed/author1/100/100",
+      "imageUrl": "https://picsum.photos/seed/author1/200/200",
       "imageHint": "professional portrait"
+    },
+    {
+      "id": "author-2",
+      "description": "A professional headshot of an author.",
+      "imageUrl": "https://picsum.photos/seed/author2/200/200",
+      "imageHint": "professional man"
     }
   ]
 }
