@@ -27,7 +27,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
     return (
         <SidebarProvider>
-            <Sidebar collapsible="none" variant="floating" className="w-auto">
+            <Sidebar collapsible="none" variant="floating" className="w-auto z-30">
                 <SidebarHeader>
                     <div className="flex items-center justify-center p-2">
                          <div className="flex items-center gap-2 p-2">
