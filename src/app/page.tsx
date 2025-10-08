@@ -93,18 +93,18 @@ export default function Home() {
               <ScrollAnimationWrapper 
                 key={index}
                 animation={{ 
-                  x: (index % 3 === 0) ? -100 : (index % 3 === 2) ? 100 : 0, 
+                  x: (index % 3 === 0) ? -100 : (index % 3 === 1) ? 0 : 100, 
                   opacity: 0, 
                   scale: 0.95 
                 }}
               >
-                <Card className="h-full bg-black border-border/20 hover:bg-gray-800 transition-colors duration-300 text-white">
+                <Card className="h-full bg-white border-border/20 hover:bg-gray-200 transition-colors duration-300 text-black">
                   <CardHeader className="flex flex-row items-center gap-4">
                     {service.icon}
-                    <CardTitle className="font-headline text-xl text-white">{service.title}</CardTitle>
+                    <CardTitle className="font-headline text-xl text-black">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-white/80">{service.description}</p>
+                    <p className="text-black/80">{service.description}</p>
                   </CardContent>
                 </Card>
               </ScrollAnimationWrapper>
