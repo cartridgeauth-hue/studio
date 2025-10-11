@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { DUMMY_POSTS } from '@/lib/dummy-data';
 import { useState } from 'react';
-import RichTextEditor from '@/components/blog/RichTextEditor';
+import { Textarea } from '@/components/ui/textarea';
 
 export default function EditBlogPostPage({ params }: { params: { postId: string } }) {
     const post = DUMMY_POSTS.find(p => p.id === params.postId);
@@ -31,7 +31,7 @@ export default function EditBlogPostPage({ params }: { params: { postId: string 
                 </div>
                 <div className="space-y-4">
                     <Label htmlFor="content">Blog Content</Label>
-                    <RichTextEditor value={content} onChange={setContent} />
+                    <Textarea id="content" value={content} onChange={(e) => setContent(e.target.value)} rows={20} />
                 </div>
 
                 <div className="flex justify-end gap-4">
