@@ -7,7 +7,7 @@ export const DUMMY_AUTHORS: Author[] = [
         id: 'author-1',
         name: 'Akankasha Sharma',
         avatar: PlaceHolderImages.find(p => p.id === 'author-1')!,
-        bio: 'CA by day, overthinker by night. Debits, credits, and emotional audits. IDK how I made it rhyme LOL',
+        bio: "Yes, its 'kasha' and not 'ksha'. CA by day, overthinker by night. Debits, credits, and emotional audits. IDK how I made it rhyme LOL.",
     }
 ];
 
