@@ -1,7 +1,7 @@
 'use client';
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import { EditorState, convertToRaw, ContentState } from 'draft-js';
+import { EditorState, ContentState } from 'draft-js';
 import { convertToHTML, convertFromHTML } from 'draft-convert';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
@@ -34,7 +34,8 @@ export default function RichTextEditor({ value, onChange }: RichTextEditorProps)
         const html = convertToHTML(state.getCurrentContent());
         onChange(html);
     };
-
+    
+    // Add table to toolbar options
     const toolbarOptions = {
         options: ['inline', 'blockType', 'list', 'textAlign', 'link', 'embedded', 'image', 'remove', 'history', 'table'],
         inline: {
