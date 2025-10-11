@@ -80,18 +80,18 @@ export const DUMMY_POSTS: BlogPost[] = [
               <table class="min-w-full divide-y divide-border my-4">
                   <thead class="bg-muted">
                       <tr>
-                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Taxable Income Slab (₹)</th>
-                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Tax Rate (%)</th>
+                          <th scope="col">Taxable Income Slab (₹)</th>
+                          <th scope="col">Tax Rate (%)</th>
                       </tr>
                   </thead>
                   <tbody class="bg-card divide-y divide-border">
-                      <tr><td class="px-6 py-4 whitespace-nowrap">Up to 4,00,000</td><td class="px-6 py-4 whitespace-nowrap">NIL</td></tr>
-                      <tr><td class="px-6 py-4 whitespace-nowrap">4,00,001 to 8,00,000</td><td class="px-6 py-4 whitespace-nowrap">5%</td></tr>
-                      <tr><td class="px-6 py-4 whitespace-nowrap">8,00,001 to 12,00,000</td><td class="px-6 py-4 whitespace-nowrap">10%</td></tr>
-                      <tr><td class="px-6 py-4 whitespace-nowrap">12,00,001 to 16,00,000</td><td class="px-6 py-4 whitespace-nowrap">15%</td></tr>
-                      <tr><td class="px-6 py-4 whitespace-nowrap">16,00,001 to 20,00,000</td><td class="px-6 py-4 whitespace-nowrap">20%</td></tr>
-                      <tr><td class="px-6 py-4 whitespace-nowrap">20,00,001 to 24,00,000</td><td class="px-6 py-4 whitespace-nowrap">25%</td></tr>
-                      <tr><td class="px-6 py-4 whitespace-nowrap">Above 24,00,000</td><td class="px-6 py-4 whitespace-nowrap">30%</td></tr>
+                      <tr><td>Up to 4,00,000</td><td>NIL</td></tr>
+                      <tr><td>4,00,001 to 8,00,000</td><td>5%</td></tr>
+                      <tr><td>8,00,001 to 12,00,000</td><td>10%</td></tr>
+                      <tr><td>12,00,001 to 16,00,000</td><td>15%</td></tr>
+                      <tr><td>16,00,001 to 20,00,000</td><td>20%</td></tr>
+                      <tr><td>20,00,001 to 24,00,000</td><td>25%</td></tr>
+                      <tr><td>Above 24,00,000</td><td>30%</td></tr>
                   </tbody>
               </table>
             </div>
@@ -106,15 +106,15 @@ export const DUMMY_POSTS: BlogPost[] = [
               <table class="min-w-full divide-y divide-border my-4">
                   <thead class="bg-muted">
                       <tr>
-                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Taxable Income Slab (₹)</th>
-                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Tax Rate (%)</th>
+                          <th scope="col">Taxable Income Slab (₹)</th>
+                          <th scope="col">Tax Rate (%)</th>
                       </tr>
                   </thead>
                   <tbody class="bg-card divide-y divide-border">
-                      <tr><td class="px-6 py-4 whitespace-nowrap">Up to 2,50,000</td><td class="px-6 py-4 whitespace-nowrap">NIL</td></tr>
-                      <tr><td class="px-6 py-4 whitespace-nowrap">2,50,001 to 5,00,000</td><td class="px-6 py-4 whitespace-nowrap">5%</td></tr>
-                      <tr><td class="px-6 py-4 whitespace-nowrap">5,00,001 to 10,00,000</td><td class="px-6 py-4 whitespace-nowrap">20%</td></tr>
-                      <tr><td class="px-6 py-4 whitespace-nowrap">Above 10,00,000</td><td class="px-6 py-4 whitespace-nowrap">30%</td></tr>
+                      <tr><td>Up to 2,50,000</td><td>NIL</td></tr>
+                      <tr><td>2,50,001 to 5,00,000</td><td>5%</td></tr>
+                      <tr><td>5,00,001 to 10,00,000</td><td>20%</td></tr>
+                      <tr><td>Above 10,00,000</td><td>30%</td></tr>
                   </tbody>
               </table>
             </div>
@@ -132,41 +132,41 @@ export const DUMMY_POSTS: BlogPost[] = [
               <table class="min-w-full divide-y divide-border my-4">
                   <thead class="bg-muted">
                       <tr>
-                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Feature</th>
-                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Old Regime</th>
-                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">New Regime (Default)</th>
+                          <th scope="col">Feature</th>
+                          <th scope="col">Old Regime</th>
+                          <th scope="col">New Regime (Default)</th>
                       </tr>
                   </thead>
                   <tbody class="bg-card divide-y divide-border">
                       <tr>
-                          <td class="px-6 py-4">Deductions & Exemptions</td>
-                          <td class="px-6 py-4">Allows 70+ exemptions (HRA, LTA, Home Loan Interest on self-occupied property, etc.)</td>
-                          <td class="px-6 py-4">Allows limited exemptions (Standard Deduction, Employer NPS contribution)</td>
+                          <td>Deductions & Exemptions</td>
+                          <td>Allows 70+ exemptions (HRA, LTA, Home Loan Interest on self-occupied property, etc.)</td>
+                          <td>Allows limited exemptions (Standard Deduction, Employer NPS contribution)</td>
                       </tr>
                       <tr>
-                          <td class="px-6 py-4">Section 80C/80D Benefit</td>
-                          <td class="px-6 py-4">Fully utilized (up to ₹1.5L + ₹50k NPS + 80D limits)</td>
-                          <td class="px-6 py-4">Cannot be claimed (excluding 80CCD(2))</td>
+                          <td>Section 80C/80D Benefit</td>
+                          <td>Fully utilized (up to ₹1.5L + ₹50k NPS + 80D limits)</td>
+                          <td>Cannot be claimed (excluding 80CCD(2))</td>
                       </tr>
                       <tr>
-                          <td class="px-6 py-4">Standard Deduction (Salaried)</td>
-                          <td class="px-6 py-4">₹50,000 allowed</td>
-                          <td class="px-6 py-4">₹50,000 allowed</td>
+                          <td>Standard Deduction (Salaried)</td>
+                          <td>₹50,000 allowed</td>
+                          <td>₹50,000 allowed</td>
                       </tr>
                       <tr>
-                          <td class="px-6 py-4">Basic Exemption Limit</td>
-                          <td class="px-6 py-4">₹2,50,000 (for non-seniors)</td>
-                          <td class="px-6 py-4">₹4,00,000 (Enhanced for FY 2025-26)</td>
+                          <td>Basic Exemption Limit</td>
+                          <td>₹2,50,000 (for non-seniors)</td>
+                          <td>₹4,00,000 (Enhanced for FY 2025-26)</td>
                       </tr>
                       <tr>
-                          <td class="px-6 py-4">Zero Tax Limit (Rebate 87A)</td>
-                          <td class="px-6 py-4">₹5,00,000 taxable income</td>
-                          <td class="px-6 py-4">₹12,00,000 taxable income (Enhanced for FY 2025-26)</td>
+                          <td>Zero Tax Limit (Rebate 87A)</td>
+                          <td>₹5,00,000 taxable income</td>
+                          <td>₹12,00,000 taxable income (Enhanced for FY 2025-26)</td>
                       </tr>
                       <tr>
-                          <td class="px-6 py-4">Best Suited For</td>
-                          <td class="px-6 py-4">Taxpayers with significant deductions (Home Loan Interest, large 80C investments)</td>
-                          <td class="px-6 py-4">Taxpayers earning up to ₹12 lakh, or those who prefer simplicity and minimal tax-saving investments</td>
+                          <td>Best Suited For</td>
+                          <td>Taxpayers with significant deductions (Home Loan Interest, large 80C investments)</td>
+                          <td>Taxpayers earning up to ₹12 lakh, or those who prefer simplicity and minimal tax-saving investments</td>
                       </tr>
                   </tbody>
               </table>
