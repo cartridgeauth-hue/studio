@@ -3,7 +3,7 @@
     {
       "id": "blog-1",
       "description": "An abstract image representing financial charts and graphs.",
-      "imageUrl": "https://picsum.photos/seed/blog1/600/400",
+      "imageUrl": "https://images.pexels.com/photos/6927341/pexels-photo-6927341.jpeg",
       "imageHint": "finance chart"
     },
     {
@@ -39,7 +39,7 @@
     {
       "id": "author-1",
       "description": "A professional headshot of an author.",
-      "imageUrl": "https://i.ibb.co/XZrpPPRc/akankasha-min.png",
+      "imageUrl": "https://i.ibb.co/b2w00ds/akankasha-min.png",
       "imageHint": "professional woman"
     },
     {
