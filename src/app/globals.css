@@ -81,6 +81,32 @@
   body {
     @apply bg-background text-foreground;
   }
+  .prose {
+    h2 {
+      @apply font-headline text-3xl font-bold mt-12 mb-6;
+    }
+    h3 {
+      @apply font-headline text-2xl font-bold mt-8 mb-4;
+    }
+    h4 {
+      @apply font-headline text-xl font-bold mt-6 mb-3;
+    }
+    table {
+        @apply bg-muted/20;
+    }
+    thead {
+        @apply bg-muted/40;
+    }
+    p.lead {
+        @apply text-xl text-muted-foreground italic;
+    }
+    blockquote {
+        @apply border-l-4 border-accent bg-muted/20 p-4 my-6;
+    }
+    blockquote p {
+        @apply m-0;
+    }
+  }
 }
 
 @layer utilities {
