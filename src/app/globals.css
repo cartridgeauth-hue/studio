@@ -117,20 +117,16 @@
     }
   }
 
-  .ql-editor {
-    @apply min-h-[300px];
-  }
-
-  .ql-snow {
-    @apply bg-card rounded-md;
+  .rdw-editor-main {
+    @apply min-h-[300px] px-4;
   }
   
-  .ql-toolbar.ql-snow {
-    @apply rounded-t-md border-input;
+  .rdw-editor-toolbar {
+    @apply rounded-t-md border-input mb-0;
   }
-
-  .ql-container.ql-snow {
-    @apply rounded-b-md border-input;
+  
+  .rdw-editor-wrapper {
+      @apply bg-card rounded-md border border-input;
   }
 }
 

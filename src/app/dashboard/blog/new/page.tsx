@@ -7,6 +7,7 @@ import RichTextEditor from '@/components/blog/RichTextEditor';
 
 export default function NewBlogPostPage() {
     const [content, setContent] = useState('');
+    const [title, setTitle] = useState('');
 
     return (
         <div className="space-y-8">
@@ -16,7 +17,7 @@ export default function NewBlogPostPage() {
                 <h2 className="text-2xl font-bold font-headline">Write Your Post</h2>
                 <div className="space-y-4">
                     <Label htmlFor="title">Blog Title</Label>
-                    <Input id="title" placeholder="Your blog title" />
+                    <Input id="title" placeholder="Your blog title" value={title} onChange={(e) => setTitle(e.target.value)} />
                 </div>
                 <div className="space-y-4">
                     <Label htmlFor="content">Blog Content</Label>

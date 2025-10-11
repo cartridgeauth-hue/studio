@@ -16,6 +16,7 @@ export default function EditBlogPostPage({ params }: { params: { postId: string 
     }
 
     const [content, setContent] = useState(post.content);
+    const [title, setTitle] = useState(post.title);
 
 
     return (
@@ -26,7 +27,7 @@ export default function EditBlogPostPage({ params }: { params: { postId: string 
                 <h2 className="text-2xl font-bold font-headline">Edit & Finalize Your Post</h2>
                 <div className="space-y-4">
                     <Label htmlFor="title">Blog Title</Label>
-                    <Input id="title" placeholder="Your final blog title" defaultValue={post.title} />
+                    <Input id="title" placeholder="Your final blog title" value={title} onChange={(e) => setTitle(e.target.value)} />
                 </div>
                 <div className="space-y-4">
                     <Label htmlFor="content">Blog Content</Label>

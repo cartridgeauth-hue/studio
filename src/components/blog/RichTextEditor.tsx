@@ -1,7 +1,15 @@
 'use client';
-import { useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import dynamic from 'next/dynamic';
-import 'react-quill/dist/quill.snow.css';
+import { EditorState, convertToRaw, ContentState } from 'draft-js';
+import { convertToHTML, convertFromHTML } from 'draft-convert';
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+
+// Dynamically import the editor to avoid SSR issues
+const Editor = dynamic(
+  () => import('react-draft-wysiwyg').then(mod => mod.Editor),
+  { ssr: false }
+);
 
 interface RichTextEditorProps {
     value: string;
@@ -9,18 +17,43 @@ interface RichTextEditorProps {
 }
 
 export default function RichTextEditor({ value, onChange }: RichTextEditorProps) {
-  const ReactQuill = useMemo(() => dynamic(() => import('react-quill'), { ssr: false }), []);
+    const [editorState, setEditorState] = useState(() => {
+        if (value) {
+            const contentState = convertFromHTML(value);
+            return EditorState.createWithContent(contentState);
+        }
+        return EditorState.createEmpty();
+    });
 
-  const modules = {
-    toolbar: [
-      [{ 'header': [1, 2, 3, 4, false] }],
-      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
-      [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
-      ['link'],
-      ['clean'],
-      ['table']
-    ],
-  };
+    const handleEditorChange = (state: EditorState) => {
+        setEditorState(state);
+        const html = convertToHTML(state.getCurrentContent());
+        onChange(html);
+    };
 
-  return <ReactQuill theme="snow" value={value} onChange={onChange} modules={modules} />;
+    const toolbarOptions = {
+        options: ['inline', 'blockType', 'list', 'textAlign', 'link', 'embedded', 'image', 'remove', 'history', 'table'],
+        inline: {
+            options: ['bold', 'italic', 'underline', 'strikethrough'],
+        },
+        blockType: {
+            options: ['Normal', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'Blockquote'],
+        },
+        list: {
+            options: ['unordered', 'ordered'],
+        },
+    };
+
+    return (
+        <div className="bg-card rounded-md border border-input">
+            <Editor
+                editorState={editorState}
+                onEditorStateChange={handleEditorChange}
+                toolbarClassName="toolbar-class !border-0 !border-b !border-input !rounded-t-md"
+                wrapperClassName="wrapper-class"
+                editorClassName="editor-class !px-4 !min-h-[300px]"
+                toolbar={toolbarOptions}
+            />
+        </div>
+    );
 }
