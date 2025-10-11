@@ -24,7 +24,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     const otherPosts = DUMMY_POSTS.filter(p => p.id !== post.id).slice(0, 3);
 
     return (
-        <div className="container mx-auto px-12 lg:px-52 py-16 md:py-24">
+        <div className="container mx-auto px-6 lg:px-52 py-16 md:py-24">
             <article className="max-w-4xl mx-auto">
                 <header className="mb-12 text-center">
                     <h1 className="font-headline text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>

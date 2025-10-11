@@ -21,7 +21,7 @@ export default function AuthorPage({ params }: { params: { authorId: string } })
     const authorPosts = DUMMY_POSTS.filter(p => p.author.id === author.id);
 
     return (
-        <div className="container mx-auto px-12 lg:px-52 py-16 md:py-24">
+        <div className="container mx-auto px-6 lg:px-52 py-16 md:py-24">
             <header className="mb-16">
                 <div className="flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
                     <Avatar className='w-32 h-32 md:w-48 md:h-48 border-4 border-accent shadow-lg'>
