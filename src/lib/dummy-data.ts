@@ -5,7 +5,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 export const DUMMY_AUTHORS: Author[] = [
     {
         id: 'author-1',
-        name: 'The Ledger Co. Staff',
+        name: 'Akankasha Sharma',
         avatar: PlaceHolderImages.find(p => p.id === 'author-1')!,
         bio: 'The Ledger Co. team comprises experts in financial regulations and tax law, passionate about simplifying complex topics for a broader audience.',
     }
