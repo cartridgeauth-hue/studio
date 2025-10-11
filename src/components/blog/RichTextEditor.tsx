@@ -4,9 +4,10 @@ import dynamic from 'next/dynamic';
 import { EditorState, ContentState } from 'draft-js';
 import { convertToHTML, convertFromHTML } from 'draft-convert';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+import type { EditorProps } from 'react-draft-wysiwyg';
 
 // Dynamically import the editor to avoid SSR issues
-const Editor = dynamic(
+const Editor = dynamic<EditorProps>(
   () => import('react-draft-wysiwyg').then(mod => mod.Editor),
   { ssr: false }
 );
@@ -17,17 +18,31 @@ interface RichTextEditorProps {
 }
 
 export default function RichTextEditor({ value, onChange }: RichTextEditorProps) {
-    const [editorState, setEditorState] = useState(() => {
-        if (value) {
-            const blocksFromHTML = convertFromHTML(value);
-            const contentState = ContentState.createFromBlockArray(
-                blocksFromHTML.contentBlocks,
-                blocksFromHTML.entityMap
-            );
-            return EditorState.createWithContent(contentState);
+    const [editorState, setEditorState] = useState<EditorState | undefined>(undefined);
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
+    useEffect(() => {
+        if (isClient) {
+            if (value) {
+                const blocksFromHTML = convertFromHTML(value);
+                if (blocksFromHTML.contentBlocks) {
+                    const contentState = ContentState.createFromBlockArray(
+                        blocksFromHTML.contentBlocks,
+                        blocksFromHTML.entityMap
+                    );
+                    setEditorState(EditorState.createWithContent(contentState));
+                } else {
+                    setEditorState(EditorState.createEmpty());
+                }
+            } else {
+                setEditorState(EditorState.createEmpty());
+            }
         }
-        return EditorState.createEmpty();
-    });
+    }, [isClient, value]);
 
     const handleEditorChange = (state: EditorState) => {
         setEditorState(state);
@@ -48,6 +63,10 @@ export default function RichTextEditor({ value, onChange }: RichTextEditorProps)
             options: ['unordered', 'ordered'],
         },
     };
+
+    if (!isClient || editorState === undefined) {
+        return null; // Or a loading spinner
+    }
 
     return (
         <div className="bg-card rounded-md border border-input">
