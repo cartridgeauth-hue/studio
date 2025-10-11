@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -115,6 +116,14 @@
     blockquote p {
         @apply m-0;
     }
+  }
+
+  .prose .prose-table-wrapper {
+    @apply w-full overflow-x-auto my-6;
+  }
+
+  .prose .prose-table-wrapper table {
+    @apply my-0;
   }
 
   .ql-toolbar {
