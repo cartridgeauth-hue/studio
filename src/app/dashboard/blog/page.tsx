@@ -4,11 +4,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { FileEdit, PlusCircle, Trash2 } from 'lucide-react';
 import Link from 'next/link';
 
-const DUMMY_POSTS = [
-    { id: '1', title: 'Navigating the Labyrinth of GST', status: 'Published', publishedAt: '2024-05-20' },
-    { id: '2', title: 'The Future of Digital Stamping', status: 'Published', publishedAt: '2024-05-18' },
-    { id: '3', title: 'Maximizing Your EPF Returns', status: 'Draft', publishedAt: '---' },
-];
+const DUMMY_POSTS: { id: string, title: string, status: string, publishedAt: string }[] = [];
 
 export default function ManageBlogPage() {
     return (
@@ -36,21 +32,29 @@ export default function ManageBlogPage() {
                             </TableRow>
                         </TableHeader>
                         <TableBody>
-                            {DUMMY_POSTS.map((post) => (
-                                <TableRow key={post.id}>
-                                    <TableCell className="font-medium">{post.title}</TableCell>
-                                    <TableCell>{post.status}</TableCell>
-                                    <TableCell>{post.publishedAt}</TableCell>
-                                    <TableCell className="text-right">
-                                        <Button variant="ghost" size="icon" asChild>
-                                            <Link href={`/dashboard/blog/edit/${post.id}`}><FileEdit className="w-4 h-4" /></Link>
-                                        </Button>
-                                        <Button variant="ghost" size="icon" className="text-destructive hover:text-destructive">
-                                            <Trash2 className="w-4 h-4" />
-                                        </Button>
+                            {DUMMY_POSTS.length > 0 ? (
+                                DUMMY_POSTS.map((post) => (
+                                    <TableRow key={post.id}>
+                                        <TableCell className="font-medium">{post.title}</TableCell>
+                                        <TableCell>{post.status}</TableCell>
+                                        <TableCell>{post.publishedAt}</TableCell>
+                                        <TableCell className="text-right">
+                                            <Button variant="ghost" size="icon" asChild>
+                                                <Link href={`/dashboard/blog/edit/${post.id}`}><FileEdit className="w-4 h-4" /></Link>
+                                            </Button>
+                                            <Button variant="ghost" size="icon" className="text-destructive hover:text-destructive">
+                                                <Trash2 className="w-4 h-4" />
+                                            </Button>
+                                        </TableCell>
+                                    </TableRow>
+                                ))
+                            ) : (
+                                <TableRow>
+                                    <TableCell colSpan={4} className="text-center text-muted-foreground">
+                                        You haven't created any posts yet.
                                     </TableCell>
                                 </TableRow>
-                            ))}
+                            )}
                         </TableBody>
                     </Table>
                 </CardContent>
