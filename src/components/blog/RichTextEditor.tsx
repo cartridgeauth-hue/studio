@@ -19,7 +19,11 @@ interface RichTextEditorProps {
 export default function RichTextEditor({ value, onChange }: RichTextEditorProps) {
     const [editorState, setEditorState] = useState(() => {
         if (value) {
-            const contentState = convertFromHTML(value);
+            const blocksFromHTML = convertFromHTML(value);
+            const contentState = ContentState.createFromBlockArray(
+                blocksFromHTML.contentBlocks,
+                blocksFromHTML.entityMap
+            );
             return EditorState.createWithContent(contentState);
         }
         return EditorState.createEmpty();
