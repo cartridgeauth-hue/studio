@@ -35,8 +35,6 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
-    "draft-convert": "^2.1.13",
-    "draft-js": "^0.11.7",
     "embla-carousel-react": "^8.6.0",
     "firebase": "^11.9.1",
     "gsap": "^3.12.5",
@@ -45,20 +43,17 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-day-picker": "^8.10.1",
-    "react-draft-wysiwyg": "^1.15.0",
     "react-hook-form": "^7.54.2",
     "recharts": "^2.15.1",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7",
-    "zod": "^3.24.2"
+    "zod": "^3.24.2",
+    "react-quill": "^2.0.0"
   },
   "devDependencies": {
-    "@types/draft-convert": "^2.1.8",
-    "@types/draft-js": "^0.11.18",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@types/react-draft-wysiwyg": "^1.13.8",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"

@@ -117,16 +117,28 @@
     }
   }
 
-  .rdw-editor-main {
-    @apply min-h-[300px] px-4;
+  .ql-toolbar {
+    @apply rounded-t-md border-input !border-b-0;
   }
-  
-  .rdw-editor-toolbar {
-    @apply rounded-t-md border-input mb-0;
+
+  .ql-container {
+      @apply rounded-b-md border-input;
   }
-  
-  .rdw-editor-wrapper {
-      @apply bg-card rounded-md border border-input;
+
+  .ql-editor {
+    @apply text-base;
+  }
+
+  .ql-snow .ql-picker-label {
+    @apply !text-foreground;
+  }
+
+  .ql-snow .ql-stroke {
+    @apply !stroke-current text-foreground;
+  }
+
+ 효율ql-snow .ql-fill {
+    @apply !fill-current text-foreground;
   }
 }
 
