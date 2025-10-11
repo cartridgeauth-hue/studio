@@ -7,7 +7,7 @@ export const DUMMY_AUTHORS: Author[] = [
         id: 'author-1',
         name: 'Akankasha Sharma',
         avatar: PlaceHolderImages.find(p => p.id === 'author-1')!,
-        bio: 'The Ledger Co. team comprises experts in financial regulations and tax law, passionate about simplifying complex topics for a broader audience.',
+        bio: 'CA by day, overthinker by night. Debits, credits, and emotional audits. IDK how I made it rhyme LOL',
     }
 ];
 
@@ -279,7 +279,7 @@ export const DUMMY_POSTS: BlogPost[] = [
         `,
         image: PlaceHolderImages.find(p => p.id === 'blog-1')!,
         author: DUMMY_AUTHORS[0],
-        publishedAt: '2024-07-29T12:00:00.000Z',
+        publishedAt: new Date().toISOString(),
     }
 ];
 
