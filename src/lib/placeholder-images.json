@@ -39,8 +39,8 @@
     {
       "id": "author-1",
       "description": "A professional headshot of an author.",
-      "imageUrl": "https://picsum.photos/seed/author1/200/200",
-      "imageHint": "professional portrait"
+      "imageUrl": "https://storage.googleapis.com/res-a-n-autogen-users/hT1DHC35G3mF1G2P6S7s/e29a32c0-8339-4467-b50a-85d1e2e7c95e.png",
+      "imageHint": "car road"
     },
     {
       "id": "author-2",
