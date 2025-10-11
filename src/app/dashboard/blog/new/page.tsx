@@ -1,10 +1,13 @@
-
+'use client';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
+import RichTextEditor from '@/components/blog/RichTextEditor';
 
 export default function NewBlogPostPage() {
+    const [content, setContent] = useState('');
+
     return (
         <div className="space-y-8">
             <h1 className="text-3xl font-bold font-headline">Create New Blog Post</h1>
@@ -17,7 +20,7 @@ export default function NewBlogPostPage() {
                 </div>
                 <div className="space-y-4">
                     <Label htmlFor="content">Blog Content</Label>
-                    <Textarea id="content" placeholder="Your blog content..." rows={15} />
+                    <RichTextEditor value={content} onChange={setContent} />
                 </div>
 
                 <div className="flex justify-end gap-4">

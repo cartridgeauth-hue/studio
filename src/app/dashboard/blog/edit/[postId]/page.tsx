@@ -1,17 +1,22 @@
+'use client';
 
 import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
 import { DUMMY_POSTS } from '@/lib/dummy-data';
+import { useState } from 'react';
+import RichTextEditor from '@/components/blog/RichTextEditor';
 
 export default function EditBlogPostPage({ params }: { params: { postId: string } }) {
     const post = DUMMY_POSTS.find(p => p.id === params.postId);
-
+    
     if (!post) {
         notFound();
     }
+
+    const [content, setContent] = useState(post.content);
+
 
     return (
         <div className="space-y-8">
@@ -25,7 +30,7 @@ export default function EditBlogPostPage({ params }: { params: { postId: string 
                 </div>
                 <div className="space-y-4">
                     <Label htmlFor="content">Blog Content</Label>
-                    <Textarea id="content" placeholder="Your final blog content..." rows={15} defaultValue={post.content.replace(/<p>/g, '').replace(/<\/p>/g, '\n\n')} />
+                    <RichTextEditor value={content} onChange={setContent} />
                 </div>
 
                 <div className="flex justify-end gap-4">

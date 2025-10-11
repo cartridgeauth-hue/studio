@@ -116,6 +116,22 @@
         @apply m-0;
     }
   }
+
+  .ql-editor {
+    @apply min-h-[300px];
+  }
+
+  .ql-snow {
+    @apply bg-card rounded-md;
+  }
+  
+  .ql-toolbar.ql-snow {
+    @apply rounded-t-md border-input;
+  }
+
+  .ql-container.ql-snow {
+    @apply rounded-b-md border-input;
+  }
 }
 
 @layer utilities {
