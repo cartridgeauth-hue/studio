@@ -1,0 +1,66 @@
+diff --git a/node_modules/react-quill/lib/index.js b/node_modules/react-quill/lib/index.js
+index 9b986e6..cf9797d 100644
+--- a/node_modules/react-quill/lib/index.js
++++ b/node_modules/react-quill/lib/index.js
+@@ -1,5 +1,6 @@
+ 'use strict';
+ 
++var ReactDOM = require('react-dom');
+ var React = require('react');
+ var Quill = require('quill');
+ var PropTypes = require('prop-types');
+@@ -107,7 +108,7 @@
+ 	},
+ 
+ 	getEditor: function getEditor() {
+-		return this.quill;
++		return this.quill
+ 	},
+ 
+ 	getEditingArea: function getEditingArea() {
+@@ -115,7 +116,7 @@
+ 	},
+ 
+ 	getEditorContents: function getEditorContents() {
+-		return this.quill.getContents();
++		return this.quill.getContents()
+ 	},
+ 
+ 	getEditorSelection: function getEditorSelection() {
+@@ -155,7 +156,7 @@
+ 	},
+ 
+ 	editingArea: function editingArea(el) {
+-		this.editingArea = el;
++		this.editingArea = el
+ 	}
+ 
+ });
+@@ -193,7 +194,7 @@
+ 		return _this.instantiateEditor();
+ 	};
+ 
+-	this.getEditingArea = function () {
++	this.getEditor = function () {
+ 		return ReactDOM.findDOMNode(_this.editingArea);
+ 	};
+ 
+diff --git a/node_modules/react-quill/lib/mixin.js b/node_modules/react-quill/lib/mixin.js
+index 5443d3b..191a6e9 100644
+--- a/node_modules/react-quill/lib/mixin.js
++++ b/node_modules/react-quill/lib/mixin.js
+@@ -1,4 +1,5 @@
+ 'use strict';
++var ReactDOM = require('react-dom');
+ 
+ /*
+ A mixin for initialization and cleanup of a Quill editor.
+@@ -130,7 +131,7 @@
+ 	},
+ 
+ 	getEditingArea: function getEditingArea() {
+-		return this.editingArea;
++		return ReactDOM.findDOMNode(this.editingArea);
+ 	},
+ 
+ 	getEditorContents: function getEditorContents() {
