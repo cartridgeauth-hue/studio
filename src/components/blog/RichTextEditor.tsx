@@ -1,8 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import { EditorState, ContentState } from 'draft-js';
-import { convertToHTML, convertFromHTML } from 'draft-convert';
+import { EditorState, ContentState, convertToHTML, convertFromHTML } from 'draft-js';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import type { EditorProps } from 'react-draft-wysiwyg';
 
@@ -22,27 +21,31 @@ export default function RichTextEditor({ value, onChange }: RichTextEditorProps)
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
+        // This ensures the component only renders on the client
         setIsClient(true);
     }, []);
 
     useEffect(() => {
         if (isClient) {
-            if (value) {
-                const blocksFromHTML = convertFromHTML(value);
-                if (blocksFromHTML.contentBlocks) {
-                    const contentState = ContentState.createFromBlockArray(
-                        blocksFromHTML.contentBlocks,
-                        blocksFromHTML.entityMap
-                    );
-                    setEditorState(EditorState.createWithContent(contentState));
+            // Initialize editorState only when on the client and it hasn't been set
+            if (!editorState) {
+                if (value) {
+                    const blocksFromHTML = convertFromHTML(value);
+                    if (blocksFromHTML.contentBlocks) {
+                        const contentState = ContentState.createFromBlockArray(
+                            blocksFromHTML.contentBlocks,
+                            blocksFromHTML.entityMap
+                        );
+                        setEditorState(EditorState.createWithContent(contentState));
+                    } else {
+                        setEditorState(EditorState.createEmpty());
+                    }
                 } else {
                     setEditorState(EditorState.createEmpty());
                 }
-            } else {
-                setEditorState(EditorState.createEmpty());
             }
         }
-    }, [isClient, value]);
+    }, [isClient]);
 
     const handleEditorChange = (state: EditorState) => {
         setEditorState(state);
@@ -52,20 +55,27 @@ export default function RichTextEditor({ value, onChange }: RichTextEditorProps)
     
     // Add table to toolbar options
     const toolbarOptions = {
-        options: ['inline', 'blockType', 'list', 'textAlign', 'link', 'embedded', 'image', 'remove', 'history'],
+        options: ['inline', 'blockType', 'fontSize', 'fontFamily', 'list', 'textAlign', 'colorPicker', 'link', 'embedded', 'emoji', 'image', 'remove', 'history'],
         inline: {
-            options: ['bold', 'italic', 'underline', 'strikethrough'],
+            options: ['bold', 'italic', 'underline', 'strikethrough', 'monospace', 'superscript', 'subscript'],
         },
         blockType: {
-            options: ['Normal', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'Blockquote'],
+            options: ['Normal', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'Blockquote', 'Code'],
         },
         list: {
-            options: ['unordered', 'ordered'],
+            options: ['unordered', 'ordered', 'indent', 'outdent'],
+        },
+        textAlign: {
+            options: ['left', 'center', 'right', 'justify'],
+        },
+        image: {
+            uploadEnabled: true,
+            alt: { present: true, mandatory: false },
         },
     };
 
     if (!isClient || editorState === undefined) {
-        return null; // Or a loading spinner
+        return <div className="bg-card rounded-md border border-input min-h-[400px] animate-pulse" />;
     }
 
     return (
