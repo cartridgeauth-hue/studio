@@ -85,6 +85,9 @@
     p, li, blockquote {
         @apply text-justify;
     }
+    li {
+        @apply mb-6;
+    }
     h2 {
       @apply font-headline text-3xl font-bold mt-16 mb-6 underline;
     }
