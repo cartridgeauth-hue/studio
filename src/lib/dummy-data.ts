@@ -76,7 +76,7 @@ export const DUMMY_POSTS: BlogPost[] = [
             
             <h4>The New Regime: Slab Rates for the Win (FY 2025-26 / AY 2026-27)</h4>
             <p>Here’s where your money lands in the new world:</p>
-            <div class="overflow-x-auto">
+            <div class="overflow-x-auto w-full">
               <table class="min-w-full divide-y divide-border my-4">
                   <thead class="bg-muted">
                       <tr>
@@ -102,7 +102,7 @@ export const DUMMY_POSTS: BlogPost[] = [
             
             <h4>Old Regime Tax Slabs: The Traditional Path (FY 2025-26 / AY 2026-27)</h4>
             <p>Here's the classic structure for non-senior citizens:</p>
-            <div class="overflow-x-auto">
+            <div class="overflow-x-auto w-full">
               <table class="min-w-full divide-y divide-border my-4">
                   <thead class="bg-muted">
                       <tr>
@@ -128,7 +128,7 @@ export const DUMMY_POSTS: BlogPost[] = [
             <p><strong>Pro-Tip:</strong> Don't guess. Run the numbers under both systems before you file your ITR. It’s a crucial calculation that could save you lakhs.</p>
             
             <h4>Old vs. New Tax Regime: The Quick Comparison (FY 2025-26)</h4>
-            <div class="overflow-x-auto">
+            <div class="overflow-x-auto w-full">
               <table class="min-w-full divide-y divide-border my-4">
                   <thead class="bg-muted">
                       <tr>
