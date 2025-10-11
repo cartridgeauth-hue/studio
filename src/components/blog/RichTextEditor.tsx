@@ -52,7 +52,7 @@ export default function RichTextEditor({ value, onChange }: RichTextEditorProps)
     
     // Add table to toolbar options
     const toolbarOptions = {
-        options: ['inline', 'blockType', 'list', 'textAlign', 'link', 'embedded', 'image', 'remove', 'history', 'table'],
+        options: ['inline', 'blockType', 'list', 'textAlign', 'link', 'embedded', 'image', 'remove', 'history'],
         inline: {
             options: ['bold', 'italic', 'underline', 'strikethrough'],
         },
