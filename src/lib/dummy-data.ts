@@ -280,8 +280,140 @@ export const DUMMY_POSTS: BlogPost[] = [
         `,
         image: PlaceHolderImages.find(p => p.id === 'blog-1')!,
         author: DUMMY_AUTHORS[0],
-        publishedAt: new Date().toISOString(),
+        publishedAt: new Date('2024-07-28T10:00:00Z').toISOString(),
+    },
+    {
+        id: '2',
+        slug: 'notarisation-under-the-notaries-act-1952',
+        title: 'Notarisation Under the Notaries Act, 1952 📜',
+        excerpt: 'A deep dive into the why, what, and how of notarising legal documents in India, governed by the Notaries Act, 1952.',
+        content: `
+            <p class="lead">In India, notarisation is an essential step in validating and authenticating legal documents. It ensures that the document is genuine, the signatories are verified, and the contents are executed voluntarily. The entire process is governed by the Notaries Act, 1952, which regulates the appointment, powers, and duties of notaries across the country.</p>
+
+            <h2>Why is Notarisation Necessary?</h2>
+            <p>Notarisation refers to the certification, attestation, or verification of a document by a Notary Public appointed under the Notaries Act, 1952.</p>
+            <ul>
+                <li>It signifies that the notary has verified the identity of the signatory, witnessed the execution, and attested the document under their official seal and signature.</li>
+                <li>Once a document is notarised, it becomes legally admissible as valid evidence in courts and before government authorities.</li>
+            </ul>
+            
+            <h2>Who is a Notary Public?</h2>
+            <p>Under Section 3 of the Notaries Act, the Central and State Governments have the power to appoint legal practitioners or other qualified persons as notaries for specific jurisdictions.</p>
+            <ul>
+                <li>A Notary Public is a licensed officer who performs legal formalities such as verifying documents, administering oaths, and attesting signatures.</li>
+                <li>Their name and details are entered in the official Register of Notaries maintained under Section 4.</li>
+            </ul>
+
+            <h2>Functions of a Notary (Section 8 of the Act)</h2>
+            <p>A Notary may perform the following duties:</p>
+            <ol>
+                <li>Verify, authenticate, certify, or attest the execution of any document.</li>
+                <li>Present any promissory note, hundi, or bill of exchange for acceptance or payment or demand better security.</li>
+                <li>Note or protest the dishonour by non-acceptance or non-payment of any promissory note, hundi, or bill of exchange, or protest for better security, or prepare acts of honour under the Negotiable Instruments Act, 1881 (26 of 1881), or serve notice of such note or protest.</li>
+                <li>Note and draw up ship's protest, boat's protest, or protest relating to demurrage and other commercial matters.</li>
+                <li>Administer an oath to, or take an affidavit from, any person.</li>
+                <li>Prepare bottomry and respondentia bonds, charter parties, and other mercantile documents.</li>
+                <li>Prepare, attest, or authenticate any instrument intended to take effect in any country or place outside India in such form and language as may conform to the law of the place where such deed is intended to operate.</li>
+                <li>Translate and verify translations of any documents from one language to another.</li>
+                <li>Act as a commissioner to record evidence in any civil or criminal trial, if so directed by any court or authority.</li>
+                <li>Act as an arbitrator, mediator, or conciliator, if required.</li>
+                <li>Any other act which may be prescribed.</li>
+            </ol>
+            <blockquote>Note: A notarial act is valid only when performed under the signature and official seal of the notary.</blockquote>
+
+            <h2>How Notarisation Works</h2>
+            <p>The notarisation process typically follows these steps:</p>
+            <ol>
+                <li><strong>Appearance Before the Notary:</strong> The person executing the document must appear in person.</li>
+                <li><strong>Verification of Identity:</strong> The notary checks ID proofs and verifies the signatory.</li>
+                <li><strong>Attestation and Signature:</strong> The notary witnesses the signing and applies their official seal, signature, and registration number.</li>
+                <li><strong>Entry in the Register:</strong> The notary records the details in their notarial register for future reference.</li>
+            </ol>
+            <p>A notary must hold a valid Certificate of Practice (Section 9) and use an approved seal design (Section 7).</p>
+
+            <h2>Need and Importance of Notarisation</h2>
+            <p>Notarisation in India provides a level of authentication that can reduce the likelihood of legal disputes by establishing the genuineness of signatures and intent.</p>
+            <p>The importance of notarisation includes:</p>
+            <ul>
+                <li><strong>Proof of Execution/Identity Verification:</strong> It confirms that the person who signed the document did so willingly and in person.</li>
+                <li><strong>Evidentiary Value:</strong> A notarised document carries presumptive authenticity under the Indian Evidence Act, 1872.</li>
+                <li><strong>Help Prevent Fraud:</strong> It stops imposters from pretending to be you, as your signature, ID, and photograph are verified by the Notary Public.</li>
+                <li><strong>Legal Authentication:</strong> It formally confirms that the document and signatures are genuine.</li>
+                <li><strong>Mandatory in Certain Cases:</strong> It is required for specific documents like affidavits, powers of attorney, property deeds, and declarations.</li>
+                <li><strong>Accepted Internationally:</strong> Some notarised documents are recognised abroad through reciprocal arrangements under Section 14 of the Act.</li>
+            </ul>
+
+            <h2>Commonly Notarised Documents</h2>
+            <p>Notaries commonly process the following types of documents:</p>
+            
+            <h3>1. Affidavits & Declarations</h3>
+            <p>These are among the most common documents that must be notarised. They're often required by government departments, banks, courts, and educational institutions.</p>
+            <p>Examples:</p>
+            <ul>
+                <li>Name change or address proof affidavit.</li>
+                <li>Lost document affidavit (like a passport, PAN card, or marksheet).</li>
+                <li>Income declaration for scholarships or tenders.</li>
+                <li>Self-declaration for business or GST registration.</li>
+            </ul>
+
+            <h3>2. Power of Attorney (PoA)</h3>
+            <p>A Power of Attorney gives another person the legal right to act on your behalf—in property matters, banking, or business. Since it’s a high-trust document, notarisation is mandatory before it can be used or registered.</p>
+            <p>Types Requiring Notarisation:</p>
+            <ul>
+                <li>General Power of Attorney (GPA).</li>
+                <li>Special Power of Attorney (SPA).</li>
+                <li>PoA for property transactions (often also registered).</li>
+            </ul>
+
+            <h3>3. Property and Real Estate Documents</h3>
+            <p>Notarisation is often needed for drafts or agreements before formal registration at the Sub-Registrar’s office.</p>
+            <p>Common Examples:</p>
+            <ul>
+                <li>Lease or Rent Agreement (for 11 months or less—longer leases need registration).</li>
+                <li>Agreement to Sell (before executing a Sale Deed).</li>
+                <li>Property Gift Deed draft.</li>
+                <li>Consent or Possession Affidavit.</li>
+            </ul>
+
+            <h3>4. Legal Declarations for Court or Government Use</h3>
+            <p>Certain legal documents require notarisation before submission to ensure the identity and authenticity of the deponent (the person making the statement).</p>
+            <p>Examples:</p>
+            <ul>
+                <li>Court affidavits (for bail, testimony, or case filings).</li>
+                <li>Declarations submitted to government offices (RTI, tender bids, etc.).</li>
+                <li>Indemnity Bonds or Undertakings.</li>
+            </ul>
+
+            <h3>5. Educational and Employment Documents</h3>
+            <p>When applying abroad or for official educational verifications, notarisation is often the first validation step before MEA Apostille or Embassy Attestation.</p>
+            <p>Examples:</p>
+            <ul>
+                <li>Academic certificates, transcripts, or mark sheets.</li>
+                <li>Experience letters or employment certificates.</li>
+                <li>Degree duplicates or lost certificate affidavits.</li>
+            </ul>
+
+            <h2>Fee Structure of a Notary</h2>
+            <p>The Notary fee is not uniform in India. It varies by state and the type of document being notarised.</p>
+
+            <h2>Penalty for Misuse</h2>
+            <ul>
+                <li>Under Section 12, anyone who falsely represents themselves as a notary or performs notarial acts without a valid certificate can face imprisonment up to one year, a fine, or both.</li>
+                <li>Further, under Section 10, a notary can be removed from the register for misconduct, insolvency, or criminal conviction.</li>
+            </ul>
+
+            <h2>Recognition of Foreign Notarial Acts</h2>
+            <p>As per Section 14, if another country recognises Indian notarised documents, India may reciprocally recognise notarised documents from that country. This is a key provision for cross-border legal compliance.</p>
+
+            <h2>Conclusion</h2>
+            <p>Notarisation in India is more than a mere formality—it is a legal safeguard that authenticates documents, ensures their voluntary execution, and upholds trust in legal and commercial dealings. Governed by the Notaries Act, 1952, it serves as the backbone of document verification in courts, government offices, and international matters alike.</p>
+        `,
+        image: PlaceHolderImages.find(p => p.id === 'blog-2')!,
+        author: DUMMY_AUTHORS[0],
+        publishedAt: new Date('2024-07-20T10:00:00Z').toISOString(),
     }
 ];
 
 export const DUMMY_QUERIES: Query[] = [];
+
+    
