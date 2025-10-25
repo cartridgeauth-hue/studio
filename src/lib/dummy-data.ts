@@ -286,7 +286,7 @@ export const DUMMY_POSTS: BlogPost[] = [
         `,
         image: PlaceHolderImages.find(p => p.id === 'blog-1')!,
         author: DUMMY_AUTHORS[0],
-        publishedAt: new Date('2024-07-28T10:00:00Z').toISOString(),
+        publishedAt: new Date('2025-10-20T10:00:00Z').toISOString(),
     },
     {
         id: '2',
@@ -328,22 +328,23 @@ export const DUMMY_POSTS: BlogPost[] = [
             <section>
                 <h2>Functions of a Notary (Section 8 of the Act)</h2>
                 <p>A Notary may perform the following duties:</p>
+                </br>
                 <ol>
-                    <li>Verify, authenticate, certify, or attest the execution of any document.</li>
-                    <li>Present any promissory note, <em>hundi</em>, or bill of exchange for acceptance or payment or demand better security.</li>
-                    <li>Note or protest the dishonour by non-acceptance or non-payment of any promissory note, <em>hundi</em>, or bill of exchange, or protest for better security, or prepare acts of honour under the <strong>Negotiable Instruments Act, 1881</strong> (26 of 1881), or serve notice of such note or protest.</li>
-                    <li>Note and draw up ship's protest, boat's protest, or protest relating to demurrage and other commercial matters.</li>
-                    <li>Administer an oath to, or take an affidavit from, any person.</li>
-                    <li>Prepare bottomry and respondentia bonds, charter parties, and other mercantile documents.</li>
-                    <li>Prepare, attest, or authenticate any instrument intended to take effect in any country or place outside India in such form and language as may conform to the law of the place where such deed is intended to operate.</li>
-                    <li>Translate and verify translations of any documents from one language to another.</li>
-                    <li>Act as a commissioner to record evidence in any civil or criminal trial, if so directed by any court or authority.</li>
-                    <li>Act as an arbitrator, mediator, or conciliator, if required.</li>
-                    <li>Any other act which may be prescribed.</li>
+                    <li>1. Verify, authenticate, certify, or attest the execution of any document.</li>
+                    <li>2. Present any promissory note, <em>hundi</em>, or bill of exchange for acceptance or payment or demand better security.</li>
+                    <li>3. Note or protest the dishonour by non-acceptance or non-payment of any promissory note, <em>hundi</em>, or bill of exchange, or protest for better security, or prepare acts of honour under the <strong>Negotiable Instruments Act, 1881</strong> (26 of 1881), or serve notice of such note or protest.</li>
+                    <li>4. Note and draw up ship's protest, boat's protest, or protest relating to demurrage and other commercial matters.</li>
+                    <li>5. Administer an oath to, or take an affidavit from, any person.</li>
+                    <li>6. Prepare bottomry and respondentia bonds, charter parties, and other mercantile documents.</li>
+                    <li>7. Prepare, attest, or authenticate any instrument intended to take effect in any country or place outside India in such form and language as may conform to the law of the place where such deed is intended to operate.</li>
+                    <li>8. Translate and verify translations of any documents from one language to another.</li>
+                    <li>9. Act as a commissioner to record evidence in any civil or criminal trial, if so directed by any court or authority.</li>
+                    <li>10. Act as an arbitrator, mediator, or conciliator, if required.</li>
+                    <li>11. Any other act which may be prescribed.</li>
                 </ol>
-                <blockquote>
-                    <p><strong>Note:</strong> A notarial act is valid only when performed under the <strong>signature and official seal</strong> of the notary.</p>
-                </blockquote>
+                <p>
+                     <blockquote><strong>Note:</strong> A notarial act is valid only when performed under the <strong>signature and official seal</strong> of the notary.</blockquote>
+                </p>
             </section>
 
             <section>
@@ -351,10 +352,10 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>The notarisation process typically follows these steps:</p>
                 </br>
                 <ol>
-                    <li><strong>Appearance Before the Notary:</strong> The person executing the document must appear <strong>in person</strong>.</li>
-                    <li><strong>Verification of Identity:</strong> The notary checks ID proofs and verifies the signatory.</li>
-                    <li><strong>Attestation and Signature:</strong> The notary witnesses the signing and applies their official <strong>seal, signature, and registration number</strong>.</li>
-                    <li><strong>Entry in the Register:</strong> The notary records the details in their notarial register for future reference.</li>
+                    <li><strong>1. Appearance Before the Notary:</strong> The person executing the document must appear <strong>in person</strong>.</li>
+                    <li><strong>2. Verification of Identity:</strong> The notary checks ID proofs and verifies the signatory.</li>
+                    <li><strong>3. Attestation and Signature:</strong> The notary witnesses the signing and applies their official <strong>seal, signature, and registration number</strong>.</li>
+                    <li><strong>4. Entry in the Register:</strong> The notary records the details in their notarial register for future reference.</li>
                 </ol>
                 <blockquote><p>
                     A notary must hold a valid <strong>Certificate of Practice</strong> (<strong>Section 9</strong>) and use an approved <strong>seal design</strong> (<strong>Section 7</strong>).
@@ -370,12 +371,12 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>The importance of notarisation includes:</p>
                 </br>
                 <ul>
-                    <li><strong>Proof of Execution/Identity Verification:</strong> It confirms that the person who signed the document did so willingly and in person.</li>
-                    <li><strong>Evidentiary Value:</strong> A notarised document carries <strong>presumptive authenticity</strong> under the <strong>Indian Evidence Act, 1872</strong>.</li>
-                    <li><strong>Help Prevent Fraud:</strong> It stops imposters from pretending to be you, as your signature, ID, and photograph are verified by the Notary Public.</li>
-                    <li><strong>Legal Authentication:</strong> It formally confirms that the document and signatures are genuine.</li>
-                    <li><strong>Mandatory in Certain Cases:</strong> It is required for specific documents like affidavits, powers of attorney, property deeds, and declarations.</li>
-                    <li><strong>Accepted Internationally:</strong> Some notarised documents are recognised abroad through reciprocal arrangements under <strong>Section 14</strong> of the Act.</li>
+                    <li><strong>1. Proof of Execution/Identity Verification:</strong> It confirms that the person who signed the document did so willingly and in person.</li>
+                    <li><strong>2. Evidentiary Value:</strong> A notarised document carries <strong>presumptive authenticity</strong> under the <strong>Indian Evidence Act, 1872</strong>.</li>
+                    <li><strong>3. Help Prevent Fraud:</strong> It stops imposters from pretending to be you, as your signature, ID, and photograph are verified by the Notary Public.</li>
+                    <li><strong>4. Legal Authentication:</strong> It formally confirms that the document and signatures are genuine.</li>
+                    <li><strong>5. Mandatory in Certain Cases:</strong> It is required for specific documents like affidavits, powers of attorney, property deeds, and declarations.</li>
+                    <li><strong>6. Accepted Internationally:</strong> Some notarised documents are recognised abroad through reciprocal arrangements under <strong>Section 14</strong> of the Act.</li>
                 </ul>
             </section>
 
@@ -390,10 +391,10 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p><em>Examples:</em></p>
                 </br>
                 <ul>
-                    <li>Name change or address proof affidavit.</li>
-                    <li>Lost document affidavit (like a passport, PAN card, or marksheet).</li>
-                    <li>Income declaration for scholarships or tenders.</li>
-                    <li>Self-declaration for business or GST registration.</li>
+                    <li>a. Name change or address proof affidavit.</li>
+                    <li>b. Lost document affidavit (like a passport, PAN card, or marksheet).</li>
+                    <li>c. Income declaration for scholarships or tenders.</li>
+                    <li>d. Self-declaration for business or GST registration.</li>
                 </ul>
 
                 <h3>2. Power of Attorney (PoA)</h3>
@@ -404,9 +405,9 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p><em>Types Requiring Notarisation:</em></p>
                 </br>
                 <ul>
-                    <li>General Power of Attorney (GPA).</li>
-                    <li>Special Power of Attorney (SPA).</li>
-                    <li>PoA for property transactions (often also registered).</li>
+                    <li>a. General Power of Attorney (GPA).</li>
+                    <li>b. Special Power of Attorney (SPA).</li>
+                    <li>c. PoA for property transactions (often also registered).</li>
                 </ul>
 
                 <h3>3. Property and Real Estate Documents</h3>
@@ -417,10 +418,10 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p><em>Common Examples:</em></p>
                 </br>
                 <ul>
-                    <li>Lease or Rent Agreement (for 11 months or less—longer leases need registration).</li>
-                    <li>Agreement to Sell (before executing a Sale Deed).</li>
-                    <li>Property Gift Deed draft.</li>
-                    <li>Consent or Possession Affidavit.</li>
+                    <li>a. Lease or Rent Agreement (for 11 months or less—longer leases need registration).</li>
+<li>b. Agreement to Sell (before executing a Sale Deed).</li>
+                    <li>c. Property Gift Deed draft.</li>
+                    <li>d. Consent or Possession Affidavit.</li>
                 </ul>
 
                 <h3>4. Legal Declarations for Court or Government Use</h3>
@@ -431,9 +432,9 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p><em>Examples:</em></p>
                 </br>
                 <ul>
-                    <li>Court affidavits (for bail, testimony, or case filings).</li>
-                    <li>Declarations submitted to government offices (RTI, tender bids, etc.).</li>
-                    <li>Indemnity Bonds or Undertakings.</li>
+                    <li>a. Court affidavits (for bail, testimony, or case filings).</li>
+                    <li>b. Declarations submitted to government offices (RTI, tender bids, etc.).</li>
+                    <li>c. Indemnity Bonds or Undertakings.</li>
                 </ul>
 
                 <h3>5. Educational and Employment Documents</h3>
@@ -444,9 +445,9 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p><em>Examples:</em></p>
                 </br>
                 <ul>
-                    <li>Academic certificates, transcripts, or mark sheets.</li>
-                    <li>Experience letters or employment certificates.</li>
-                    <li>Degree duplicates or lost certificate affidavits.</li>
+                    <li>a. Academic certificates, transcripts, or mark sheets.</li>
+                    <li>b. Experience letters or employment certificates.</li>
+                    <li>c. Degree duplicates or lost certificate affidavits.</li>
                 </ul>
             </section>
 
@@ -480,14 +481,10 @@ export const DUMMY_POSTS: BlogPost[] = [
             </section>
         `,
         image: PlaceHolderImages.find(p => p.id === 'blog-2')!,
-        author: DUMMY_AUTHORS[0],
-        publishedAt: new Date('2024-07-20T10:00:00Z').toISOString(),
+        author: DUMMY_AUTHORS[1],
+        publishedAt: new Date('2025-10-26T10:00:00Z').toISOString(),
     }
 ];
 
 export const DUMMY_QUERIES: Query[] = [];
-
-    
-
-    
 
