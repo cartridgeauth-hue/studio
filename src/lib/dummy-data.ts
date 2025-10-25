@@ -9,6 +9,12 @@ export const DUMMY_AUTHORS: Author[] = [
         name: 'Akankasha Sharma',
         avatar: PlaceHolderImages.find(p => p.id === 'author-1')!,
         bio: "Yes, its 'kasha' and not 'ksha'. CA by day, overthinker by night. Debits, credits, and emotional audits. IDK how I made it rhyme LOL.",
+    },
+    {
+        id: 'author-2',
+        name: 'Rajmin Imam Khan',
+        avatar: PlaceHolderImages.find(p => p.id === 'author-2')!,
+        bio: "AWAITING BIO DETAILS FROM AUTHOR.",
     }
 ];
 
@@ -308,9 +314,11 @@ export const DUMMY_POSTS: BlogPost[] = [
 
             <section>
                 <h2>Who is a Notary Public?</h2>
+                
                 <p>
                     Under <strong>Section 3</strong> of the Notaries Act, the Central and State Governments have the power to appoint legal practitioners or other qualified persons as notaries for specific jurisdictions.
                 </p>
+                </br>
                 <ul>
                     <li>A <strong>Notary Public</strong> is a licensed officer who performs legal formalities such as verifying documents, administering oaths, and attesting signatures.</li>
                     <li>Their name and details are entered in the official <strong>Register of Notaries</strong> maintained under <strong>Section 4</strong>.</li>
@@ -333,23 +341,24 @@ export const DUMMY_POSTS: BlogPost[] = [
                     <li>Act as an arbitrator, mediator, or conciliator, if required.</li>
                     <li>Any other act which may be prescribed.</li>
                 </ol>
-                <p>
-                    <strong>Note:</strong> A notarial act is valid only when performed under the <strong>signature and official seal</strong> of the notary.
-                </p>
+                <blockquote>
+                    <p><strong>Note:</strong> A notarial act is valid only when performed under the <strong>signature and official seal</strong> of the notary.</p>
+                </blockquote>
             </section>
 
             <section>
                 <h2>How Notarisation Works</h2>
                 <p>The notarisation process typically follows these steps:</p>
+                </br>
                 <ol>
                     <li><strong>Appearance Before the Notary:</strong> The person executing the document must appear <strong>in person</strong>.</li>
                     <li><strong>Verification of Identity:</strong> The notary checks ID proofs and verifies the signatory.</li>
                     <li><strong>Attestation and Signature:</strong> The notary witnesses the signing and applies their official <strong>seal, signature, and registration number</strong>.</li>
                     <li><strong>Entry in the Register:</strong> The notary records the details in their notarial register for future reference.</li>
                 </ol>
-                <p>
+                <blockquote><p>
                     A notary must hold a valid <strong>Certificate of Practice</strong> (<strong>Section 9</strong>) and use an approved <strong>seal design</strong> (<strong>Section 7</strong>).
-                </p>
+                </p></blockquote>
             </section>
 
             <section>
@@ -357,7 +366,9 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>
                     Notarisation in India provides a level of authentication that can **reduce the likelihood of legal disputes** by establishing the genuineness of signatures and intent.
                 </p>
+                </br>
                 <p>The importance of notarisation includes:</p>
+                </br>
                 <ul>
                     <li><strong>Proof of Execution/Identity Verification:</strong> It confirms that the person who signed the document did so willingly and in person.</li>
                     <li><strong>Evidentiary Value:</strong> A notarised document carries <strong>presumptive authenticity</strong> under the <strong>Indian Evidence Act, 1872</strong>.</li>
@@ -375,7 +386,9 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>
                     These are among the most common documents that must be notarised. They're often required by government departments, banks, courts, and educational institutions.
                 </p>
+                </br>
                 <p><em>Examples:</em></p>
+                </br>
                 <ul>
                     <li>Name change or address proof affidavit.</li>
                     <li>Lost document affidavit (like a passport, PAN card, or marksheet).</li>
@@ -387,7 +400,9 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>
                     A Power of Attorney gives another person the legal right to act on your behalf—in property matters, banking, or business. Since it’s a high-trust document, notarisation is mandatory before it can be used or registered.
                 </p>
+                </br>
                 <p><em>Types Requiring Notarisation:</em></p>
+                </br>
                 <ul>
                     <li>General Power of Attorney (GPA).</li>
                     <li>Special Power of Attorney (SPA).</li>
@@ -398,10 +413,12 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>
                     Notarisation is often needed for drafts or agreements before formal registration at the Sub-Registrar’s office.
                 </p>
+                </br>
                 <p><em>Common Examples:</em></p>
+                </br>
                 <ul>
                     <li>Lease or Rent Agreement (for 11 months or less—longer leases need registration).</li>
-<li>Agreement to Sell (before executing a Sale Deed).</li>
+                    <li>Agreement to Sell (before executing a Sale Deed).</li>
                     <li>Property Gift Deed draft.</li>
                     <li>Consent or Possession Affidavit.</li>
                 </ul>
@@ -410,7 +427,9 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>
                     Certain legal documents require notarisation before submission to ensure the identity and authenticity of the deponent (the person making the statement).
                 </p>
+                </br>
                 <p><em>Examples:</em></p>
+                </br>
                 <ul>
                     <li>Court affidavits (for bail, testimony, or case filings).</li>
                     <li>Declarations submitted to government offices (RTI, tender bids, etc.).</li>
@@ -421,7 +440,9 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>
                     When applying abroad or for official educational verifications, notarisation is often the first validation step before MEA Apostille or Embassy Attestation.
                 </p>
+                </br>
                 <p><em>Examples:</em></p>
+                </br>
                 <ul>
                     <li>Academic certificates, transcripts, or mark sheets.</li>
                     <li>Experience letters or employment certificates.</li>
@@ -469,3 +490,4 @@ export const DUMMY_QUERIES: Query[] = [];
     
 
     
+
