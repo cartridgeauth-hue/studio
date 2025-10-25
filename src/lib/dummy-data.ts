@@ -285,7 +285,7 @@ export const DUMMY_POSTS: BlogPost[] = [
     {
         id: '2',
         slug: 'notarisation-under-the-notaries-act-1952',
-        title: 'Notarisation Under the Notaries Act, 1952 📜',
+        title: 'Notarisation Under the Notaries Act, 1952',
         excerpt: 'A deep dive into the why, what, and how of notarising legal documents in India, governed by the Notaries Act, 1952.',
         content: `
             <p class="lead">In India, notarisation is an essential step in validating and authenticating legal documents. It ensures that the document is genuine, the signatories are verified, and the contents are executed voluntarily. The entire process is governed by the Notaries Act, 1952, which regulates the appointment, powers, and duties of notaries across the country.</p>
