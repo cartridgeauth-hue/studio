@@ -330,17 +330,17 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>A Notary may perform the following duties:</p>
                 </br>
                 <ol>
-                    <li>1. Verify, authenticate, certify, or attest the execution of any document.</li>
-                    <li>2. Present any promissory note, <em>hundi</em>, or bill of exchange for acceptance or payment or demand better security.</li>
-                    <li>3. Note or protest the dishonour by non-acceptance or non-payment of any promissory note, <em>hundi</em>, or bill of exchange, or protest for better security, or prepare acts of honour under the <strong>Negotiable Instruments Act, 1881</strong> (26 of 1881), or serve notice of such note or protest.</li>
-                    <li>4. Note and draw up ship's protest, boat's protest, or protest relating to demurrage and other commercial matters.</li>
-                    <li>5. Administer an oath to, or take an affidavit from, any person.</li>
-                    <li>6. Prepare bottomry and respondentia bonds, charter parties, and other mercantile documents.</li>
-                    <li>7. Prepare, attest, or authenticate any instrument intended to take effect in any country or place outside India in such form and language as may conform to the law of the place where such deed is intended to operate.</li>
-                    <li>8. Translate and verify translations of any documents from one language to another.</li>
-                    <li>9. Act as a commissioner to record evidence in any civil or criminal trial, if so directed by any court or authority.</li>
-                    <li>10. Act as an arbitrator, mediator, or conciliator, if required.</li>
-                    <li>11. Any other act which may be prescribed.</li>
+                    <li>a. Verify, authenticate, certify, or attest the execution of any document.</li>
+                    <li>b. Present any promissory note, <em>hundi</em>, or bill of exchange for acceptance or payment or demand better security.</li>
+                    <li>c. Note or protest the dishonour by non-acceptance or non-payment of any promissory note, <em>hundi</em>, or bill of exchange, or protest for better security, or prepare acts of honour under the <strong>Negotiable Instruments Act, 1881</strong> (26 of 1881), or serve notice of such note or protest.</li>
+                    <li>d. Note and draw up ship's protest, boat's protest, or protest relating to demurrage and other commercial matters.</li>
+                    <li>e. Administer an oath to, or take an affidavit from, any person.</li>
+                    <li>f. Prepare bottomry and respondentia bonds, charter parties, and other mercantile documents.</li>
+                    <li>g. Prepare, attest, or authenticate any instrument intended to take effect in any country or place outside India in such form and language as may conform to the law of the place where such deed is intended to operate.</li>
+                    <li>h. Translate and verify translations of any documents from one language to another.</li>
+                    <li>i. Act as a commissioner to record evidence in any civil or criminal trial, if so directed by any court or authority.</li>
+                    <li>j. Act as an arbitrator, mediator, or conciliator, if required.</li>
+                    <li>k. Any other act which may be prescribed.</li>
                 </ol>
                 <p>
                      <blockquote><strong>Note:</strong> A notarial act is valid only when performed under the <strong>signature and official seal</strong> of the notary.</blockquote>
@@ -477,6 +477,10 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <h2>Conclusion</h2>
                 <p>
                     Notarisation in India is more than a mere formality—it is a <strong>legal safeguard</strong> that authenticates documents, ensures their voluntary execution, and upholds trust in legal and commercial dealings. Governed by the <strong>Notaries Act, 1952</strong>, it serves as the backbone of document verification in courts, government offices, and international matters alike.
+                </p>
+                </br>
+                <p>
+                The contents of this blog are offered for knowledge and educational purposes only and are not to be construed as legal advice. Laws are complex and context-specific. Should you require advice or representation regarding a legal matter, please contact us directly to arrange for a legal consultation with an experienced professional.
                 </p>
             </section>
         `,
