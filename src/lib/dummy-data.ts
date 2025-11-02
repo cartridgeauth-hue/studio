@@ -29,7 +29,7 @@ export const DUMMY_POSTS: BlogPost[] = [
         id: '1',
         slug: 'painless-guide-to-indian-income-tax-fy-2025-26',
         title: 'Stop Panicking! Your Fun, Funny, and Painless Guide to Indian Income Tax (FY 2025-26 Edition)',
-        excerpt: 'Your friendly, jargon-free map to mastering your money\'s destiny. We’re diving into the absolute latest updates for the money you earned this year—the Financial Year 2025-26.',
+        excerpt: 'Let’s dive into the absolute latest updates for the money you earned this year—the Financial Year 2025-26.',
         content: `
             <p class="lead">Let's face it: dealing with income tax feels less like grown-up financial planning and more like getting a root canal while trying to solve a Rubik's Cube. But fear not! You don't need a PhD in Chartered Accountancy to stay compliant. This guide is your friendly, jargon-free map to mastering your money's destiny. We’re diving into the absolute latest updates for the money you earned this year—the Financial Year 2025-26 (which the government gets around to assessing in AY 2026-27). Time to make your money work, instead of making you cry.</p>
             
