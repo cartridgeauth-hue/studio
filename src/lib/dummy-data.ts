@@ -318,7 +318,6 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>
                     Under <strong>Section 3</strong> of the Notaries Act, the Central and State Governments have the power to appoint legal practitioners or other qualified persons as notaries for specific jurisdictions.
                 </p>
-                </br>
                 <ul>
                     <li>A <strong>Notary Public</strong> is a licensed officer who performs legal formalities such as verifying documents, administering oaths, and attesting signatures.</li>
                     <li>Their name and details are entered in the official <strong>Register of Notaries</strong> maintained under <strong>Section 4</strong>.</li>
@@ -328,34 +327,32 @@ export const DUMMY_POSTS: BlogPost[] = [
             <section>
                 <h2>Functions of a Notary (Section 8 of the Act)</h2>
                 <p>A Notary may perform the following duties:</p>
-                </br>
                 <ol>
-                    <li>a. Verify, authenticate, certify, or attest the execution of any document.</li>
-                    <li>b. Present any promissory note, <em>hundi</em>, or bill of exchange for acceptance or payment or demand better security.</li>
-                    <li>c. Note or protest the dishonour by non-acceptance or non-payment of any promissory note, <em>hundi</em>, or bill of exchange, or protest for better security, or prepare acts of honour under the <strong>Negotiable Instruments Act, 1881</strong> (26 of 1881), or serve notice of such note or protest.</li>
-                    <li>d. Note and draw up ship's protest, boat's protest, or protest relating to demurrage and other commercial matters.</li>
-                    <li>e. Administer an oath to, or take an affidavit from, any person.</li>
-                    <li>f. Prepare bottomry and respondentia bonds, charter parties, and other mercantile documents.</li>
-                    <li>g. Prepare, attest, or authenticate any instrument intended to take effect in any country or place outside India in such form and language as may conform to the law of the place where such deed is intended to operate.</li>
-                    <li>h. Translate and verify translations of any documents from one language to another.</li>
-                    <li>i. Act as a commissioner to record evidence in any civil or criminal trial, if so directed by any court or authority.</li>
-                    <li>j. Act as an arbitrator, mediator, or conciliator, if required.</li>
-                    <li>k. Any other act which may be prescribed.</li>
+                    <li>Verify, authenticate, certify, or attest the execution of any document.</li>
+                    <li>Present any promissory note, <em>hundi</em>, or bill of exchange for acceptance or payment or demand better security.</li>
+                    <li>Note or protest the dishonour by non-acceptance or non-payment of any promissory note, <em>hundi</em>, or bill of exchange, or protest for better security, or prepare acts of honour under the <strong>Negotiable Instruments Act, 1881</strong> (26 of 1881), or serve notice of such note or protest.</li>
+                    <li>Note and draw up ship's protest, boat's protest, or protest relating to demurrage and other commercial matters.</li>
+                    <li>Administer an oath to, or take an affidavit from, any person.</li>
+                    <li>Prepare bottomry and respondentia bonds, charter parties, and other mercantile documents.</li>
+                    <li>Prepare, attest, or authenticate any instrument intended to take effect in any country or place outside India in such form and language as may conform to the law of the place where such deed is intended to operate.</li>
+                    <li>Translate and verify translations of any documents from one language to another.</li>
+                    <li>Act as a commissioner to record evidence in any civil or criminal trial, if so directed by any court or authority.</li>
+                    <li>Act as an arbitrator, mediator, or conciliator, if required.</li>
+                    <li>Any other act which may be prescribed.</li>
                 </ol>
-                <p>
-                     <blockquote><strong>Note:</strong> A notarial act is valid only when performed under the <strong>signature and official seal</strong> of the notary.</blockquote>
-                </p>
+                <blockquote><p>
+                    <strong>Note:</strong> A notarial act is valid only when performed under the <strong>signature and official seal</strong> of the notary.
+                </p></blockquote>
             </section>
 
             <section>
                 <h2>How Notarisation Works</h2>
                 <p>The notarisation process typically follows these steps:</p>
-                </br>
                 <ol>
-                    <li><strong>1. Appearance Before the Notary:</strong> The person executing the document must appear <strong>in person</strong>.</li>
-                    <li><strong>2. Verification of Identity:</strong> The notary checks ID proofs and verifies the signatory.</li>
-                    <li><strong>3. Attestation and Signature:</strong> The notary witnesses the signing and applies their official <strong>seal, signature, and registration number</strong>.</li>
-                    <li><strong>4. Entry in the Register:</strong> The notary records the details in their notarial register for future reference.</li>
+                    <li><strong>Appearance Before the Notary:</strong> The person executing the document must appear <strong>in person</strong>.</li>
+                    <li><strong>Verification of Identity:</strong> The notary checks ID proofs and verifies the signatory.</li>
+                    <li><strong>Attestation and Signature:</strong> The notary witnesses the signing and applies their official <strong>seal, signature, and registration number</strong>.</li>
+                    <li><strong>Entry in the Register:</strong> The notary records the details in their notarial register for future reference.</li>
                 </ol>
                 <blockquote><p>
                     A notary must hold a valid <strong>Certificate of Practice</strong> (<strong>Section 9</strong>) and use an approved <strong>seal design</strong> (<strong>Section 7</strong>).
@@ -367,16 +364,14 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>
                     Notarisation in India provides a level of authentication that can **reduce the likelihood of legal disputes** by establishing the genuineness of signatures and intent.
                 </p>
-                </br>
                 <p>The importance of notarisation includes:</p>
-                </br>
                 <ul>
-                    <li><strong>1. Proof of Execution/Identity Verification:</strong> It confirms that the person who signed the document did so willingly and in person.</li>
-                    <li><strong>2. Evidentiary Value:</strong> A notarised document carries <strong>presumptive authenticity</strong> under the <strong>Indian Evidence Act, 1872</strong>.</li>
-                    <li><strong>3. Help Prevent Fraud:</strong> It stops imposters from pretending to be you, as your signature, ID, and photograph are verified by the Notary Public.</li>
-                    <li><strong>4. Legal Authentication:</strong> It formally confirms that the document and signatures are genuine.</li>
-                    <li><strong>5. Mandatory in Certain Cases:</strong> It is required for specific documents like affidavits, powers of attorney, property deeds, and declarations.</li>
-                    <li><strong>6. Accepted Internationally:</strong> Some notarised documents are recognised abroad through reciprocal arrangements under <strong>Section 14</strong> of the Act.</li>
+                    <li><strong>Proof of Execution/Identity Verification:</strong> It confirms that the person who signed the document did so willingly and in person.</li>
+                    <li><strong>Evidentiary Value:</strong> A notarised document carries <strong>presumptive authenticity</strong> under the <strong>Indian Evidence Act, 1872</strong>.</li>
+                    <li><strong>Help Prevent Fraud:</strong> It stops imposters from pretending to be you, as your signature, ID, and photograph are verified by the Notary Public.</li>
+                    <li><strong>Legal Authentication:</strong> It formally confirms that the document and signatures are genuine.</li>
+                    <li><strong>Mandatory in Certain Cases:</strong> It is required for specific documents like affidavits, powers of attorney, property deeds, and declarations.</li>
+                    <li><strong>Accepted Internationally:</strong> Some notarised documents are recognised abroad through reciprocal arrangements under <strong>Section 14</strong> of the Act.</li>
                 </ul>
             </section>
 
@@ -387,67 +382,57 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>
                     These are among the most common documents that must be notarised. They're often required by government departments, banks, courts, and educational institutions.
                 </p>
-                </br>
                 <p><em>Examples:</em></p>
-                </br>
                 <ul>
-                    <li>a. Name change or address proof affidavit.</li>
-                    <li>b. Lost document affidavit (like a passport, PAN card, or marksheet).</li>
-                    <li>c. Income declaration for scholarships or tenders.</li>
-                    <li>d. Self-declaration for business or GST registration.</li>
+                    <li>Name change or address proof affidavit.</li>
+                    <li>Lost document affidavit (like a passport, PAN card, or marksheet).</li>
+                    <li>Income declaration for scholarships or tenders.</li>
+                    <li>Self-declaration for business or GST registration.</li>
                 </ul>
 
                 <h3>2. Power of Attorney (PoA)</h3>
                 <p>
                     A Power of Attorney gives another person the legal right to act on your behalf—in property matters, banking, or business. Since it’s a high-trust document, notarisation is mandatory before it can be used or registered.
                 </p>
-                </br>
                 <p><em>Types Requiring Notarisation:</em></p>
-                </br>
                 <ul>
-                    <li>a. General Power of Attorney (GPA).</li>
-                    <li>b. Special Power of Attorney (SPA).</li>
-                    <li>c. PoA for property transactions (often also registered).</li>
+                    <li>General Power of Attorney (GPA).</li>
+                    <li>Special Power of Attorney (SPA).</li>
+                    <li>PoA for property transactions (often also registered).</li>
                 </ul>
 
                 <h3>3. Property and Real Estate Documents</h3>
                 <p>
                     Notarisation is often needed for drafts or agreements before formal registration at the Sub-Registrar’s office.
                 </p>
-                </br>
                 <p><em>Common Examples:</em></p>
-                </br>
                 <ul>
-                    <li>a. Lease or Rent Agreement (for 11 months or less—longer leases need registration).</li>
-<li>b. Agreement to Sell (before executing a Sale Deed).</li>
-                    <li>c. Property Gift Deed draft.</li>
-                    <li>d. Consent or Possession Affidavit.</li>
+                    <li>Lease or Rent Agreement (for 11 months or less—longer leases need registration).</li>
+                    <li>Agreement to Sell (before executing a Sale Deed).</li>
+                    <li>Property Gift Deed draft.</li>
+                    <li>Consent or Possession Affidavit.</li>
                 </ul>
 
                 <h3>4. Legal Declarations for Court or Government Use</h3>
                 <p>
                     Certain legal documents require notarisation before submission to ensure the identity and authenticity of the deponent (the person making the statement).
                 </p>
-                </br>
                 <p><em>Examples:</em></p>
-                </br>
                 <ul>
-                    <li>a. Court affidavits (for bail, testimony, or case filings).</li>
-                    <li>b. Declarations submitted to government offices (RTI, tender bids, etc.).</li>
-                    <li>c. Indemnity Bonds or Undertakings.</li>
+                    <li>Court affidavits (for bail, testimony, or case filings).</li>
+                    <li>Declarations submitted to government offices (RTI, tender bids, etc.).</li>
+                    <li>Indemnity Bonds or Undertakings.</li>
                 </ul>
 
                 <h3>5. Educational and Employment Documents</h3>
                 <p>
                     When applying abroad or for official educational verifications, notarisation is often the first validation step before MEA Apostille or Embassy Attestation.
                 </p>
-                </br>
                 <p><em>Examples:</em></p>
-                </br>
                 <ul>
-                    <li>a. Academic certificates, transcripts, or mark sheets.</li>
-                    <li>b. Experience letters or employment certificates.</li>
-                    <li>c. Degree duplicates or lost certificate affidavits.</li>
+                    <li>Academic certificates, transcripts, or mark sheets.</li>
+                    <li>Experience letters or employment certificates.</li>
+                    <li>Degree duplicates or lost certificate affidavits.</li>
                 </ul>
             </section>
 
@@ -478,7 +463,6 @@ export const DUMMY_POSTS: BlogPost[] = [
                 <p>
                     Notarisation in India is more than a mere formality—it is a <strong>legal safeguard</strong> that authenticates documents, ensures their voluntary execution, and upholds trust in legal and commercial dealings. Governed by the <strong>Notaries Act, 1952</strong>, it serves as the backbone of document verification in courts, government offices, and international matters alike.
                 </p>
-                </br>
                 <p>
                 The contents of this blog are offered for knowledge and educational purposes only and are not to be construed as legal advice. Laws are complex and context-specific. Should you require advice or representation regarding a legal matter, please contact us directly to arrange for a legal consultation with an experienced professional.
                 </p>
@@ -487,6 +471,128 @@ export const DUMMY_POSTS: BlogPost[] = [
         image: PlaceHolderImages.find(p => p.id === 'blog-2')!,
         author: DUMMY_AUTHORS[1],
         publishedAt: new Date('2025-10-26T10:00:00Z').toISOString(),
+    },
+    {
+        id: '3',
+        slug: 'guide-to-epfo-2025',
+        title: 'Stay Chill, Secure Funds: Your Fun, Funny & Foolproof Guide to EPFO (2025 Edition)',
+        excerpt: 'EPFO is like trying to tame a lazy lion — scary at first, but once you know how to pet it, it’s all chill. Let’s dive in!',
+        content: `
+            <p class="lead">EPFO is like trying to tame a lazy lion — scary at first, but once you know how to pet it, it’s all chill. You don’t need to be a finance wizard or an app developer to manage your PF account smartly. In this guide, I’ll take you from zero to EPFO hero — minus the boredom, minus the jargon, and definitely with some laughs. Let’s dive in!</p>
+
+            <h2>What Is EPFO, Anyway?</h2>
+            <ul>
+                <li>EPF, EPS, what’s UAN — demystify the jargon</li>
+                <li>Why it matters (retirement, emergencies, compounding)</li>
+            </ul>
+
+            <h2>EPFO in 2025: What’s New & Noteworthy</h2>
+            <ul>
+                <li>Face authentication via UMANG for UAN generation/activation (from Aug 1, 2025)</li>
+                <li>Auto settlement limits, faster claim rules, no employer approval for bank updates</li>
+                <li>Passbook Lite, annexure downloads, streamlined transfers</li>
+            </ul>
+
+            <h2>Contribution, Withdrawal & All That Jazz</h2>
+            <ul>
+                <li>How EPF contribution is split (employee, employer, EPS)</li>
+                <li>When you can partially withdraw (for house, education, marriage)</li>
+                <li>The “final settlement” rules & what’s changed in 2025</li>
+            </ul>
+
+            <h2>Trouble Zones & Common Complaints (so you don’t freak out)</h2>
+            <ul>
+                <li>Delays in contributions showing up in account</li>
+                <li>Grievance-portal headaches, rejections, employer non-cooperation</li>
+                <li>Software glitches, system lag, zero balance showing weirdness</li>
+            </ul>
+
+            <h2>Pro Tips to Hack the System (Responsibly!)</h2>
+            <ul>
+                <li>Keep your KYC (Aadhaar / PAN / bank) up to date</li>
+                <li>Monitor your passbook quarterly</li>
+                <li>Use the auto claim features smartly</li>
+                <li>Keep documentation e.g. loan letters, withdrawal proofs</li>
+                <li>Escalation paths: grievance portals, PF commissioner, social media</li>
+            </ul>
+
+            <h2>Checklist for EPFO Peace of Mind</h2>
+            <ul>
+                <li>Before you join a job</li>
+                <li>After you leave a job / switch jobs</li>
+                <li>Annually (or every 6 months)</li>
+                <li>Pre retirement</li>
+            </ul>
+
+            <h2>Applicability & Coverage</h2>
+            <ul>
+                <li>All establishments to which the EPF Act applies must register and maintain provident fund accounts for their employees.</li>
+                <li>The Act empowers the “appropriate government” (central or state) to exempt any establishment (or category thereof) from certain provisions under Section 17 of the EPF Act, provided that their alternate scheme offers benefits no less favorable than those under the EPF Scheme.</li>
+            </ul>
+
+            <h2>Contribution Structure</h2>
+            <ul>
+                <li>The standard contribution rate is 12% of basic wages + dearness allowance (DA + retaining allowances) from both employer and employee.</li>
+                <li>Of the employer’s share, 3.67% is directed into EPF, and 8.33% into the Employees’ Pension Scheme (EPS 95) (subject to wage ceilings and eligibility).</li>
+                <li>For employees earning above a wage ceiling (statutory limit), only part of their salary is considered for contribution (i.e., the ceiling applies). This is how the pension contribution is limited.</li>
+                <li>Voluntary contributions beyond the statutory wages (or ceilings) may be permitted under Para 26(6) of the EPF Scheme, subject to the employer’s consent and administrative approval.</li>
+            </ul>
+
+            <h2>Benefits, Withdrawals & Settlement</h2>
+            <ul>
+                <li>The EPF corpus (employee + employer parts) accumulates interest annually. The interest rate is declared by the government/EPFO.</li>
+                <li>Members may make partial withdrawals / advances under prescribed conditions (e.g. medical, housing, education), subject to minimum service requirements and conditions as per the EPF Scheme.</li>
+                <li>Full or final settlement (withdrawal) is allowed when the member leaves service, retires, or on specified conditions (subject to scheme rules).</li>
+                <li>Transfers: When an employee changes employer, the EPF balance is to be transferred to the new account under Para 57(1) of the EPF Scheme.</li>
+            </ul>
+
+            <h2>Pension (EPS)</h2>
+            <ul>
+                <li>The EPS 95 provides a monthly pension upon retirement, or certain benefits for disablement, death, etc.</li>
+                <li>Eligibility typically requires a minimum service period (for example, 10 years) under the pension scheme rules.</li>
+                <li>If service is less than required, a withdrawal benefit or refund (as per scheme rules) can be claimed.</li>
+            </ul>
+
+            <h2>Deposit-Linked Insurance (EDLI)</h2>
+            <ul>
+                <li>Under the EDLI scheme, a lump-sum insurance benefit is payable to the nominee in the event of the employee’s death during service, subject to upper limits and conditions defined by scheme regulations.</li>
+                <li>The employer contributes a specified portion (beyond the basic EPF / EPS) to fund this insurance cover.</li>
+            </ul>
+
+            <h2>Compliance, Penalties & Governance</h2>
+            <h3>Filing & Payment Obligations</h3>
+            <ul>
+                <li>Employers are required to submit Electronic Challan-cum-Return (ECR) for monthly contributions.</li>
+                <li>Contributions (employee + employer) must be deposited by the 15th of the following month (or as prescribed) to avoid penalties.</li>
+                <li>Delays attract interest (at statutory rate) on the amount due as per scheme rules, and administrative penalties under the Act.</li>
+                <li>For an EPF ECR delay, the employer faces a 12% per annum interest penalty under Section 7Q on the unpaid amount, plus penal damages under Section 14B that range from 5% to 25% per annum, depending on how long the delay is. A recent scheme offers concessional rates for compliance, but the standard penalties and interest are the main penalties for delay.</li>
+            </ul>
+            
+            <h3>Interest and penalties for delayed ECR</h3>
+            <h4>Interest (Section 7Q):</h4>
+            <p>Section 7Q of the Employees' Provident Funds and Miscellaneous Provisions Act, 1952 (EPF Act) mandates that employers pay simple interest at a minimum rate of 12% per annum on any delayed payment of contributions or other dues under the Act. This interest is payable from the date the amount becomes due until the date of actual payment, and the rate can be higher if specified in the scheme, but not exceeding the lending rate of scheduled banks. This section ensures that employers are incentivized to pay their statutory dues promptly to avoid financial penalties and contribute to the social security of employees.</p>
+            
+            <h4>Penal Damages (Section 14B):</h4>
+            <p>These penalties are levied based on the duration of the delay:</p>
+            <ul>
+                <li>Up to 2 months: 5% per annum</li>
+                <li>2 to 4 months: 10% per annum</li>
+                <li>4 to 6 months: 15% per annum</li>
+                <li>More than 6 months: 25% per annum</li>
+            </ul>
+
+            <h4>What to do if you have a delay?</h4>
+            <ul>
+                <li>Pay the delayed amount through the EPFO portal by clicking on "Damages and Interest" under the "PAYMENTS" tab.</li>
+                <li>EPFO will send official notices to the employer regarding the due interest and penalties, according to Labour Law Advisor.</li>
+                <li>Although penalties can be contested, a waiver is unlikely if the payment was indeed delayed.</li>
+            </ul>
+            
+            <p>Non compliance (e.g. defaulting in contribution, misreporting) may invite prosecution, fines, and other legal consequences under the EPF Act.</p>
+        `,
+        image: PlaceHolderImages.find(p => p.id === 'blog-3')!,
+        author: DUMMY_AUTHORS[0],
+        publishedAt: new Date('2025-11-05T10:00:00Z').toISOString(),
     }
 ];
 
