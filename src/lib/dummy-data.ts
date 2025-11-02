@@ -8,13 +8,19 @@ export const DUMMY_AUTHORS: Author[] = [
         id: 'author-1',
         name: 'Akankasha Sharma',
         avatar: PlaceHolderImages.find(p => p.id === 'author-1')!,
-        bio: "Yes, its 'kasha' and not 'ksha'. CA by day, overthinker by night. Debits, credits, and emotional audits. IDK how I made it rhyme LOL.",
+        bio: "Yes, it's 'kasha' and not 'ksha'. CA by day, overthinker by night. Debits, credits, and emotional audits. IDK how I made it rhyme LOL.",
     },
     {
         id: 'author-2',
         name: 'Rajmin Imam Khan',
         avatar: PlaceHolderImages.find(p => p.id === 'author-2')!,
-        bio: "AWAITING BIO DETAILS FROM AUTHOR.",
+        bio: "Advocate. This word right here should be enough.",
+    },
+    {
+        id: 'author-3',
+        name: 'Abhishek Das',
+        avatar: PlaceHolderImages.find(p => p.id === 'author-2')!,
+        bio: "EPFO and ESIC expert with 5 years of experience.",
     }
 ];
 
@@ -591,8 +597,8 @@ export const DUMMY_POSTS: BlogPost[] = [
             <p>Non compliance (e.g. defaulting in contribution, misreporting) may invite prosecution, fines, and other legal consequences under the EPF Act.</p>
         `,
         image: PlaceHolderImages.find(p => p.id === 'blog-3')!,
-        author: DUMMY_AUTHORS[0],
-        publishedAt: new Date('2025-11-05T10:00:00Z').toISOString(),
+        author: DUMMY_AUTHORS[2],
+        publishedAt: new Date('2025-11-01T10:00:00Z').toISOString(),
     }
 ];
 
